@@ -20,14 +20,14 @@ public enum Autorizador {
 		@Override
 		public String getNfeConsultaProtocolo(Ambiente ambiente) {
 			return ambiente.equals(Ambiente.HOMOLOGACAO)
-					? "	https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl"
+					? "https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl"
 					: "https://nfe.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl";
 		}
 
 		@Override
 		public String getNfceConsultaProtocolo(Ambiente ambiente) {
 			return ambiente.equals(Ambiente.HOMOLOGACAO)
-					? "	https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl"
+					? "https://homolog.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl"
 					: "https://nfe.sefaz.go.gov.br/nfe/services/NFeConsultaProtocolo4?wsdl";
 		}
 
