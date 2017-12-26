@@ -1,5 +1,7 @@
 package br.com.inloc.nfe4.classes;
 
+import java.security.KeyStore;
+
 public interface Configuracao {
 
 	public UnidadeFederativa getUnidadeFederativa();
