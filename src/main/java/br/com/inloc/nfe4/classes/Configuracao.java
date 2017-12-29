@@ -1,7 +1,5 @@
 package br.com.inloc.nfe4.classes;
 
-import java.security.KeyStore;
-
 public interface Configuracao {
 
 	public UnidadeFederativa getUnidadeFederativa();
@@ -13,4 +11,8 @@ public interface Configuracao {
 	public String getSenhaCertificado();
 
 	public String getUrlCacerts();
+
+	public String getIdToken();
+
+	public String getCSC();
 }

@@ -33,4 +33,14 @@ public class ConfiguracaoJAO implements Configuracao, Serializable {
 	public String getUrlCacerts() {
 		return "homologacao.cacerts";
 	}
+
+	@Override
+	public String getIdToken() {
+		return "";
+	}
+
+	@Override
+	public String getCSC() {
+		return "";
+	}
 }

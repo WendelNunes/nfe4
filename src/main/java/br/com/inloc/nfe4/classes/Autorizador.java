@@ -44,6 +44,13 @@ public enum Autorizador {
 					? "https://homolog.sefaz.go.gov.br/nfe/services/NFeAutorizacao4?wsdl"
 					: "https://nfe.sefaz.go.gov.br/nfe/services/NFeAutorizacao4?wsdl";
 		}
+
+		@Override
+		public String getNfceUrlQrcode(Ambiente ambiente) {
+			return ambiente.equals(Ambiente.HOMOLOGACAO)
+					? "http://homolog.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe"
+					: "http://nfe.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe";
+		}
 	};
 
 	private UnidadeFederativa unidadeFederativa;
@@ -67,6 +74,8 @@ public enum Autorizador {
 	public abstract String getNfeAutorizacao(Ambiente ambiente);
 
 	public abstract String getNfceAutorizacao(Ambiente ambiente);
+
+	public abstract String getNfceUrlQrcode(Ambiente ambiente);
 
 	public static Autorizador obterPorUnidadeFederativa(UnidadeFederativa unidadeFederativa) {
 		for (Autorizador a : values()) {
