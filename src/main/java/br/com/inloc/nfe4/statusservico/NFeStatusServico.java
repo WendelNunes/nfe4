@@ -22,7 +22,8 @@ public class NFeStatusServico {
 
 	public TRetConsStatServ getStatus() throws Exception {
 		CertificadoDigital.geraInformacoesCertificadoDigital(this.configuracao);
-		URL url = new URL(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfeStatusServico(this.configuracao.getAmbiente()));
+		URL url = new URL(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
+				.getNfeStatusServico(this.configuracao.getAmbiente()));
 		ObjectFactory objectFactory = new ObjectFactory();
 		TConsStatServ consStatServ = objectFactory.createTConsStatServ();
 		consStatServ.setCUF(this.configuracao.getUnidadeFederativa().getCodigo());

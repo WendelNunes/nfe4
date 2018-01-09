@@ -5,6 +5,7 @@ import java.util.Base64;
 import java.util.List;
 
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe;
+import br.com.inloc.nfe4.autorizacao.TNFe.InfNFeSupl;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det.Imposto;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det.Imposto.COFINS;
@@ -24,6 +25,7 @@ import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Transp;
 import br.com.inloc.nfe4.classes.Autorizador;
 import br.com.inloc.nfe4.classes.Configuracao;
 import br.com.inloc.nfe4.classes.ConfiguracaoJAO;
+import br.com.inloc.nfe4.util.AssinaturaDigital;
 import br.com.inloc.nfe4.util.QrCode;
 
 public class NFeAutorizacaoServico {
@@ -35,35 +37,46 @@ public class NFeAutorizacaoServico {
 		this.configuracao = configuracao;
 	}
 
-	public TRetEnviNFe autoriza(List<TNFe> nfe, String idLote) {
-		for (TNFe n : nfe) {
-			QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100", this.configuracao.getAmbiente().getId(), n.getInfNFe().getDest().getCNPJ() != null ? n
-					.getInfNFe().getDest().getCNPJ() : n.getInfNFe().getDest().getCPF(), n.getInfNFe().getIde().getDhEmi(), n.getInfNFe().getTotal().getICMSTot()
-					.getVNF(), n.getInfNFe().getTotal().getICMSTot().getVICMS(),
-					Base64.getEncoder().encodeToString(nfe.get(0).getSignature().getSignedInfo().getReference().getDigestValue()), this.configuracao.getIdToken(),
-					this.configuracao.getCSC(),
-					Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente()));
-		}
-
+	public TRetEnviNFe autoriza(List<TNFe> nfe, String idLote) throws Exception {
 		ObjectFactory objectFactory = new ObjectFactory();
 		TEnviNFe tEnviNFe = objectFactory.createTEnviNFe();
 		tEnviNFe.setIdLote(idLote);
 		tEnviNFe.setIndSinc("1");
 		tEnviNFe.setVersao("4.00");
 		tEnviNFe.getNFe().addAll(nfe);
-
+		tEnviNFe = TEnviNFe.xmlToObject(new AssinaturaDigital().assinaEnviNFe(tEnviNFe.getXML(),
+				this.configuracao.getUrlCertificado(), this.configuracao.getSenhaCertificado()));
+		for (TNFe n : tEnviNFe.getNFe()) {
+			String qrCode = QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100",
+					this.configuracao.getAmbiente().getId(),
+					n.getInfNFe().getDest() == null ? null
+							: n.getInfNFe().getDest().getCNPJ() != null ? n.getInfNFe().getDest().getCNPJ()
+									: n.getInfNFe().getDest().getCPF(),
+					n.getInfNFe().getIde().getDhEmi(), n.getInfNFe().getTotal().getICMSTot().getVNF(),
+					n.getInfNFe().getTotal().getICMSTot().getVICMS(),
+					Base64.getEncoder()
+							.encodeToString(n.getSignature().getSignedInfo().getReference().getDigestValue()),
+					this.configuracao.getIdToken(), this.configuracao.getCSC(),
+					Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
+							.getNfceUrlQrcode(this.configuracao.getAmbiente()));
+			InfNFeSupl infNFeSupl = objectFactory.createTNFeInfNFeSupl();
+			infNFeSupl.setQrCode(qrCode);
+			n.setInfNFeSupl(infNFeSupl);
+		}
+		System.out.println(tEnviNFe.getXML());
 		return null;
 	}
 
 	public static void main(String[] args) {
 		try {
-			String cnpjEmitente = "";
-			String inscricaoEstadualEmitente = "";
-			String telefoneEmitente = "";
-			String serie = "";
-			String numeroNotaFiscal = "";
-			String chaveNotaFiscal = "";
-			String digitoVerificador = "";
+			String cnpjEmitente = "03619219000161";
+			String inscricaoEstadualEmitente = "103243976";
+			String telefoneEmitente = "6235410790";
+			String serie = "1";
+			String numeroNotaFiscal = "11";
+			String chaveNotaFiscal = "12967733";
+			String digitoVerificador = "0";
+			String id = "NFe52171203619219000161650010000000111129677330";
 
 			ConfiguracaoJAO configuracaoJAO = new ConfiguracaoJAO();
 			NFeAutorizacaoServico nFeAutorizacaoServico = new NFeAutorizacaoServico(new ConfiguracaoJAO());
@@ -195,9 +208,10 @@ public class NFeAutorizacaoServico {
 			detPag.setVPag("34.99");
 			pag.getDetPag().add(detPag);
 			infNFe.setPag(pag);
+			infNFe.setId(id);
 
 			nfe.setInfNFe(infNFe);
-			nFeAutorizacaoServico.autoriza(Arrays.asList(nfe), "1");
+			nFeAutorizacaoServico.autoriza(Arrays.asList(nfe), "0000001");
 		} catch (Exception e) {
 			System.err.println(e);
 		}

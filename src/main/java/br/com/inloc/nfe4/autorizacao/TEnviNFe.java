@@ -5,24 +5,32 @@
 // Gerado em: 2017.12.26 às 12:32:45 PM BRST 
 //
 
-
 package br.com.inloc.nfe4.autorizacao;
 
+import java.io.StringReader;
+import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
+
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBElement;
+import javax.xml.bind.Marshaller;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlType;
-
+import javax.xml.transform.stream.StreamSource;
 
 /**
- *  Tipo Pedido de Concessão de Autorização da Nota Fiscal Eletrônica
+ * Tipo Pedido de Concessão de Autorização da Nota Fiscal Eletrônica
  * 
- * <p>Classe Java de TEnviNFe complex type.
+ * <p>
+ * Classe Java de TEnviNFe complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * <p>
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
+ * desta classe.
  * 
  * <pre>
  * &lt;complexType name="TEnviNFe">
@@ -50,121 +58,124 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TEnviNFe", propOrder = {
-    "idLote",
-    "indSinc",
-    "nFe"
-})
+@XmlType(name = "TEnviNFe", propOrder = { "idLote", "indSinc", "nFe" })
 public class TEnviNFe {
 
-    @XmlElement(required = true)
-    protected String idLote;
-    @XmlElement(required = true)
-    protected String indSinc;
-    @XmlElement(name = "NFe", required = true)
-    protected List<TNFe> nFe;
-    @XmlAttribute(name = "versao", required = true)
-    protected String versao;
+	@XmlElement(required = true)
+	protected String idLote;
+	@XmlElement(required = true)
+	protected String indSinc;
+	@XmlElement(name = "NFe", required = true)
+	protected List<TNFe> nFe;
+	@XmlAttribute(name = "versao", required = true)
+	protected String versao;
 
-    /**
-     * Obtém o valor da propriedade idLote.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIdLote() {
-        return idLote;
-    }
+	/**
+	 * Obtém o valor da propriedade idLote.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getIdLote() {
+		return idLote;
+	}
 
-    /**
-     * Define o valor da propriedade idLote.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIdLote(String value) {
-        this.idLote = value;
-    }
+	/**
+	 * Define o valor da propriedade idLote.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setIdLote(String value) {
+		this.idLote = value;
+	}
 
-    /**
-     * Obtém o valor da propriedade indSinc.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getIndSinc() {
-        return indSinc;
-    }
+	/**
+	 * Obtém o valor da propriedade indSinc.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getIndSinc() {
+		return indSinc;
+	}
 
-    /**
-     * Define o valor da propriedade indSinc.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setIndSinc(String value) {
-        this.indSinc = value;
-    }
+	/**
+	 * Define o valor da propriedade indSinc.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setIndSinc(String value) {
+		this.indSinc = value;
+	}
 
-    /**
-     * Gets the value of the nFe property.
-     * 
-     * <p>
-     * This accessor method returns a reference to the live list,
-     * not a snapshot. Therefore any modification you make to the
-     * returned list will be present inside the JAXB object.
-     * This is why there is not a <CODE>set</CODE> method for the nFe property.
-     * 
-     * <p>
-     * For example, to add a new item, do as follows:
-     * <pre>
-     *    getNFe().add(newItem);
-     * </pre>
-     * 
-     * 
-     * <p>
-     * Objects of the following type(s) are allowed in the list
-     * {@link TNFe }
-     * 
-     * 
-     */
-    public List<TNFe> getNFe() {
-        if (nFe == null) {
-            nFe = new ArrayList<TNFe>();
-        }
-        return this.nFe;
-    }
+	/**
+	 * Gets the value of the nFe property.
+	 * 
+	 * <p>
+	 * This accessor method returns a reference to the live list, not a snapshot.
+	 * Therefore any modification you make to the returned list will be present
+	 * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
+	 * for the nFe property.
+	 * 
+	 * <p>
+	 * For example, to add a new item, do as follows:
+	 * 
+	 * <pre>
+	 * getNFe().add(newItem);
+	 * </pre>
+	 * 
+	 * 
+	 * <p>
+	 * Objects of the following type(s) are allowed in the list {@link TNFe }
+	 * 
+	 * 
+	 */
+	public List<TNFe> getNFe() {
+		if (nFe == null) {
+			nFe = new ArrayList<TNFe>();
+		}
+		return this.nFe;
+	}
 
-    /**
-     * Obtém o valor da propriedade versao.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getVersao() {
-        return versao;
-    }
+	/**
+	 * Obtém o valor da propriedade versao.
+	 * 
+	 * @return possible object is {@link String }
+	 * 
+	 */
+	public String getVersao() {
+		return versao;
+	}
 
-    /**
-     * Define o valor da propriedade versao.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setVersao(String value) {
-        this.versao = value;
-    }
+	/**
+	 * Define o valor da propriedade versao.
+	 * 
+	 * @param value
+	 *            allowed object is {@link String }
+	 * 
+	 */
+	public void setVersao(String value) {
+		this.versao = value;
+	}
 
+	public String getXML() throws Exception {
+		JAXBContext context = JAXBContext.newInstance(TEnviNFe.class);
+		JAXBElement<TEnviNFe> element = new ObjectFactory().createEnviNFe(this);
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, Boolean.FALSE);
+		marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
+		StringWriter sw = new StringWriter();
+		marshaller.marshal(element, sw);
+		return sw.toString();
+	}
+
+	public static TEnviNFe xmlToObject(String xml) throws Exception {
+		JAXBContext context = JAXBContext.newInstance(TEnviNFe.class);
+		return context.createUnmarshaller().unmarshal(new StreamSource(new StringReader(xml)), TEnviNFe.class)
+				.getValue();
+	}
 }

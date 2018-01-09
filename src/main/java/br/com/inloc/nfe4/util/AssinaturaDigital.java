@@ -59,30 +59,36 @@ public class AssinaturaDigital {
 			AssinaturaDigital assinaturaDigital = new AssinaturaDigital();
 
 			/**
-			 * Assinando o XML de Lote da NF-e fileEnviNFe = Caminho do Arquivo XML (EnviNFe) gerado;
+			 * Assinando o XML de Lote da NF-e fileEnviNFe = Caminho do Arquivo XML
+			 * (EnviNFe) gerado;
 			 */
 			info("");
 			String fileEnviNFe = "C:/JavaC/NF-e/xmlEnviNFe.xml";
 			String xmlEnviNFe = lerXML(fileEnviNFe);
-			String xmlEnviNFeAssinado = assinaturaDigital.assinaEnviNFe(xmlEnviNFe, caminhoDoCertificadoDoCliente, senhaDoCertificadoDoCliente);
+			String xmlEnviNFeAssinado = assinaturaDigital.assinaEnviNFe(xmlEnviNFe, caminhoDoCertificadoDoCliente,
+					senhaDoCertificadoDoCliente);
 			info("XML EnviNFe Assinado: " + xmlEnviNFeAssinado);
 
 			/**
-			 * Assinando o XML de Cancelamento da NF-e fileCancNFe = Caminho do Arquivo XML (CancNFe) gerado;
+			 * Assinando o XML de Cancelamento da NF-e fileCancNFe = Caminho do Arquivo XML
+			 * (CancNFe) gerado;
 			 */
 			info("");
 			String fileCancNFe = "C:/JavaC/NF-e/xmlCancNFe.xml";
 			String xmlCancNFe = lerXML(fileCancNFe);
-			String xmlCancNFeAssinado = assinaturaDigital.assinaCancNFe(xmlCancNFe, caminhoDoCertificadoDoCliente, senhaDoCertificadoDoCliente);
+			String xmlCancNFeAssinado = assinaturaDigital.assinaCancNFe(xmlCancNFe, caminhoDoCertificadoDoCliente,
+					senhaDoCertificadoDoCliente);
 			info("XML CancNFe Assinado: " + xmlCancNFeAssinado);
 
 			/**
-			 * Assinando o XML de Inutilizacao da NF-e fileInutNFe = Caminho do Arquivo XML (InutNFe) gerado;
+			 * Assinando o XML de Inutilizacao da NF-e fileInutNFe = Caminho do Arquivo XML
+			 * (InutNFe) gerado;
 			 */
 			info("");
 			String fileInutNFe = "C:/JavaC/NF-e/xmlInutNFe.xml";
 			String xmlInutNFe = lerXML(fileInutNFe);
-			String xmlInutNFeAssinado = assinaturaDigital.assinaInutNFe(xmlInutNFe, caminhoDoCertificadoDoCliente, senhaDoCertificadoDoCliente);
+			String xmlInutNFeAssinado = assinaturaDigital.assinaInutNFe(xmlInutNFe, caminhoDoCertificadoDoCliente,
+					senhaDoCertificadoDoCliente);
 			info("XML InutNFe Assinado: " + xmlInutNFeAssinado);
 
 		} catch (Exception e) {
@@ -126,7 +132,8 @@ public class AssinaturaDigital {
 	}
 
 	/**
-	 * Assinatura do XML de Inutilizacao de sequenciais da NF-e utilizando Certificado Digital A1.
+	 * Assinatura do XML de Inutilizacao de sequenciais da NF-e utilizando
+	 * Certificado Digital A1.
 	 * 
 	 * @param xml
 	 * @param certificado
@@ -138,25 +145,30 @@ public class AssinaturaDigital {
 		return assinaCancelametoInutilizacao(xml, certificado, senha, INFINUT);
 	}
 
-	private void assinarNFe(XMLSignatureFactory fac, ArrayList<Transform> transformList, PrivateKey privateKey, KeyInfo ki, Document document, int indexNFe)
-			throws Exception {
+	private void assinarNFe(XMLSignatureFactory fac, ArrayList<Transform> transformList, PrivateKey privateKey,
+			KeyInfo ki, Document document, int indexNFe) throws Exception {
 
 		NodeList elements = document.getElementsByTagName("infNFe");
 		org.w3c.dom.Element el = (org.w3c.dom.Element) elements.item(indexNFe);
 		String id = el.getAttribute("Id");
+		el.setIdAttribute("Id", true);
 
-		Reference ref = fac.newReference("#" + id, fac.newDigestMethod(DigestMethod.SHA1, null), transformList, null, null);
+		Reference ref = fac.newReference("#" + id, fac.newDigestMethod(DigestMethod.SHA1, null), transformList, null,
+				null);
 
-		SignedInfo si = fac.newSignedInfo(fac.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE, (C14NMethodParameterSpec) null),
+		SignedInfo si = fac.newSignedInfo(
+				fac.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE, (C14NMethodParameterSpec) null),
 				fac.newSignatureMethod(SignatureMethod.RSA_SHA1, null), Collections.singletonList(ref));
 
 		XMLSignature signature = fac.newXMLSignature(si, ki);
 
-		DOMSignContext dsc = new DOMSignContext(privateKey, document.getDocumentElement().getElementsByTagName(NFE).item(indexNFe));
+		DOMSignContext dsc = new DOMSignContext(privateKey,
+				document.getDocumentElement().getElementsByTagName(NFE).item(indexNFe));
 		signature.sign(dsc);
 	}
 
-	private String assinaCancelametoInutilizacao(String xml, String certificado, String senha, String tagCancInut) throws Exception {
+	private String assinaCancelametoInutilizacao(String xml, String certificado, String senha, String tagCancInut)
+			throws Exception {
 		Document document = documentFactory(xml);
 
 		XMLSignatureFactory signatureFactory = XMLSignatureFactory.getInstance("DOM");
@@ -167,9 +179,12 @@ public class AssinaturaDigital {
 		org.w3c.dom.Element el = (org.w3c.dom.Element) elements.item(0);
 		String id = el.getAttribute("Id");
 
-		Reference ref = signatureFactory.newReference("#" + id, signatureFactory.newDigestMethod(DigestMethod.SHA1, null), transformList, null, null);
+		Reference ref = signatureFactory.newReference("#" + id,
+				signatureFactory.newDigestMethod(DigestMethod.SHA1, null), transformList, null, null);
 
-		SignedInfo si = signatureFactory.newSignedInfo(signatureFactory.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE, (C14NMethodParameterSpec) null),
+		SignedInfo si = signatureFactory.newSignedInfo(
+				signatureFactory.newCanonicalizationMethod(CanonicalizationMethod.INCLUSIVE,
+						(C14NMethodParameterSpec) null),
 				signatureFactory.newSignatureMethod(SignatureMethod.RSA_SHA1, null), Collections.singletonList(ref));
 
 		XMLSignature signature = signatureFactory.newXMLSignature(si, keyInfo);
@@ -180,7 +195,8 @@ public class AssinaturaDigital {
 		return outputXML(document);
 	}
 
-	private ArrayList<Transform> signatureFactory(XMLSignatureFactory signatureFactory) throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
+	private ArrayList<Transform> signatureFactory(XMLSignatureFactory signatureFactory)
+			throws NoSuchAlgorithmException, InvalidAlgorithmParameterException {
 		ArrayList<Transform> transformList = new ArrayList<Transform>();
 		TransformParameterSpec tps = null;
 		Transform envelopedTransform = signatureFactory.newTransform(Transform.ENVELOPED, tps);
@@ -198,7 +214,8 @@ public class AssinaturaDigital {
 		return document;
 	}
 
-	private void loadCertificates(String certificado, String senha, XMLSignatureFactory signatureFactory) throws Exception {
+	private void loadCertificates(String certificado, String senha, XMLSignatureFactory signatureFactory)
+			throws Exception {
 
 		InputStream entrada = new FileInputStream(certificado);
 		KeyStore ks = KeyStore.getInstance("pkcs12");
@@ -213,7 +230,8 @@ public class AssinaturaDigital {
 		while (aliasesEnum.hasMoreElements()) {
 			String alias = (String) aliasesEnum.nextElement();
 			if (ks.isKeyEntry(alias)) {
-				pkEntry = (KeyStore.PrivateKeyEntry) ks.getEntry(alias, new KeyStore.PasswordProtection(senha.toCharArray()));
+				pkEntry = (KeyStore.PrivateKeyEntry) ks.getEntry(alias,
+						new KeyStore.PasswordProtection(senha.toCharArray()));
 				privateKey = pkEntry.getPrivateKey();
 				break;
 			}
