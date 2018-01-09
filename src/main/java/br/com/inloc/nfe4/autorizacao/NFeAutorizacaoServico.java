@@ -8,9 +8,7 @@ import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.util.AXIOMUtil;
 
 import br.com.inloc.nfe4.autorizacao.NFeAutorizacao4Stub.NfeDadosMsg;
-import br.com.inloc.nfe4.autorizacao.NFeAutorizacao4Stub.NfeResultMsg;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe;
-import br.com.inloc.nfe4.autorizacao.TNFe.InfNFeSupl;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det.Imposto;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det.Imposto.COFINS;
@@ -27,6 +25,7 @@ import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Pag.DetPag;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Total;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Total.ICMSTot;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Transp;
+import br.com.inloc.nfe4.autorizacao.TNFe.InfNFeSupl;
 import br.com.inloc.nfe4.classes.Autorizador;
 import br.com.inloc.nfe4.classes.Configuracao;
 import br.com.inloc.nfe4.classes.ConfiguracaoJAO;
@@ -68,9 +67,7 @@ public class NFeAutorizacaoServico {
 		nfeDadosMsg.setExtraElement(ome);
 		NFeAutorizacao4Stub nFeAutorizacao4Stub = new NFeAutorizacao4Stub(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
 				.getNfceAutorizacao(this.configuracao.getAmbiente()));
-		NfeResultMsg nfeResultMsg = nFeAutorizacao4Stub.nfeAutorizacaoLote(nfeDadosMsg);
-		
-		return null;
+		return TRetEnviNFe.xmlToObject(nFeAutorizacao4Stub.nfeAutorizacaoLote(nfeDadosMsg).getExtraElement().toString());
 	}
 
 	public static void main(String[] args) {
