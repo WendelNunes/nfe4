@@ -4,6 +4,11 @@ import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
 
+import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.util.AXIOMUtil;
+
+import br.com.inloc.nfe4.autorizacao.NFeAutorizacao4Stub.NfeDadosMsg;
+import br.com.inloc.nfe4.autorizacao.NFeAutorizacao4Stub.NfeResultMsg;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFeSupl;
 import br.com.inloc.nfe4.autorizacao.TNFe.InfNFe.Det;
@@ -44,26 +49,27 @@ public class NFeAutorizacaoServico {
 		tEnviNFe.setIndSinc("1");
 		tEnviNFe.setVersao("4.00");
 		tEnviNFe.getNFe().addAll(nfe);
-		tEnviNFe = TEnviNFe.xmlToObject(new AssinaturaDigital().assinaEnviNFe(tEnviNFe.getXML(),
-				this.configuracao.getUrlCertificado(), this.configuracao.getSenhaCertificado()));
+		tEnviNFe = TEnviNFe.xmlToObject(new AssinaturaDigital().assinaEnviNFe(tEnviNFe.getXML(), this.configuracao.getUrlCertificado(),
+				this.configuracao.getSenhaCertificado()));
 		for (TNFe n : tEnviNFe.getNFe()) {
-			String qrCode = QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100",
-					this.configuracao.getAmbiente().getId(),
-					n.getInfNFe().getDest() == null ? null
-							: n.getInfNFe().getDest().getCNPJ() != null ? n.getInfNFe().getDest().getCNPJ()
-									: n.getInfNFe().getDest().getCPF(),
-					n.getInfNFe().getIde().getDhEmi(), n.getInfNFe().getTotal().getICMSTot().getVNF(),
-					n.getInfNFe().getTotal().getICMSTot().getVICMS(),
-					Base64.getEncoder()
-							.encodeToString(n.getSignature().getSignedInfo().getReference().getDigestValue()),
-					this.configuracao.getIdToken(), this.configuracao.getCSC(),
-					Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
-							.getNfceUrlQrcode(this.configuracao.getAmbiente()));
+			String qrCode = QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100", this.configuracao.getAmbiente().getId(), n.getInfNFe().getDest() == null
+					? null
+					: n.getInfNFe().getDest().getCNPJ() != null ? n.getInfNFe().getDest().getCNPJ() : n.getInfNFe().getDest().getCPF(),
+					n.getInfNFe().getIde().getDhEmi(), n.getInfNFe().getTotal().getICMSTot().getVNF(), n.getInfNFe().getTotal().getICMSTot().getVICMS(), Base64
+							.getEncoder().encodeToString(n.getSignature().getSignedInfo().getReference().getDigestValue()), this.configuracao.getIdToken(),
+					this.configuracao.getCSC(),
+					Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente()));
 			InfNFeSupl infNFeSupl = objectFactory.createTNFeInfNFeSupl();
 			infNFeSupl.setQrCode(qrCode);
 			n.setInfNFeSupl(infNFeSupl);
 		}
-		System.out.println(tEnviNFe.getXML());
+		OMElement ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
+		NfeDadosMsg nfeDadosMsg = new NFeAutorizacao4Stub.NfeDadosMsg();
+		nfeDadosMsg.setExtraElement(ome);
+		NFeAutorizacao4Stub nFeAutorizacao4Stub = new NFeAutorizacao4Stub(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
+				.getNfceAutorizacao(this.configuracao.getAmbiente()));
+		NfeResultMsg nfeResultMsg = nFeAutorizacao4Stub.nfeAutorizacaoLote(nfeDadosMsg);
+		
 		return null;
 	}
 
