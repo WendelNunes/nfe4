@@ -29,8 +29,7 @@ import javax.xml.transform.stream.StreamSource;
  * Classe Java de TEnviNFe complex type.
  * 
  * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro
- * desta classe.
+ * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType name="TEnviNFe">
@@ -58,7 +57,7 @@ import javax.xml.transform.stream.StreamSource;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "TEnviNFe", propOrder = { "idLote", "indSinc", "nFe" })
+@XmlType(name = "TEnviNFe", propOrder = {"idLote", "indSinc", "nFe"})
 public class TEnviNFe {
 
 	@XmlElement(required = true)
@@ -116,10 +115,8 @@ public class TEnviNFe {
 	 * Gets the value of the nFe property.
 	 * 
 	 * <p>
-	 * This accessor method returns a reference to the live list, not a snapshot.
-	 * Therefore any modification you make to the returned list will be present
-	 * inside the JAXB object. This is why there is not a <CODE>set</CODE> method
-	 * for the nFe property.
+	 * This accessor method returns a reference to the live list, not a snapshot. Therefore any modification you make to the returned list will be
+	 * present inside the JAXB object. This is why there is not a <CODE>set</CODE> method for the nFe property.
 	 * 
 	 * <p>
 	 * For example, to add a new item, do as follows:
@@ -170,12 +167,12 @@ public class TEnviNFe {
 		marshaller.setProperty(Marshaller.JAXB_FRAGMENT, Boolean.TRUE);
 		StringWriter sw = new StringWriter();
 		marshaller.marshal(element, sw);
-		return sw.toString();
+		String xml = sw.toString();
+		return xml;
 	}
 
 	public static TEnviNFe xmlToObject(String xml) throws Exception {
 		JAXBContext context = JAXBContext.newInstance(TEnviNFe.class);
-		return context.createUnmarshaller().unmarshal(new StreamSource(new StringReader(xml)), TEnviNFe.class)
-				.getValue();
+		return context.createUnmarshaller().unmarshal(new StreamSource(new StringReader(xml)), TEnviNFe.class).getValue();
 	}
 }

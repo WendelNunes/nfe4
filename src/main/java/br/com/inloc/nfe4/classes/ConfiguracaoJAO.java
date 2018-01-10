@@ -36,7 +36,7 @@ public class ConfiguracaoJAO implements Configuracao, Serializable {
 
 	@Override
 	public String getIdToken() {
-		return this.getAmbiente().equals(Ambiente.HOMOLOGACAO) ? "1" : "";
+		return this.getAmbiente().equals(Ambiente.HOMOLOGACAO) ? "000001" : "";
 	}
 
 	@Override

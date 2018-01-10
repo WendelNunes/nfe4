@@ -9,7 +9,6 @@ public class QrCode {
 
 	public static String getCodeQRCode(String chave, String versao, String ambiente, String cpfCnpj, String dhEmi, String valorNF, String valorICMS, String digVal,
 			String idToken, String CSC, String urlConsulta) {
-
 		StringBuilder value = new StringBuilder();
 		value.append("chNFe=").append(chave);
 		value.append("&nVersao=").append(versao);
@@ -21,7 +20,6 @@ public class QrCode {
 		value.append("&digVal=").append(getHexa(digVal));
 		value.append("&cIdToken=").append(idToken);
 		cHashQRCode = getHexa(getHash(value.toString() + CSC, "SHA-1")).toUpperCase();
-
 		StringBuilder ret = new StringBuilder();
 		ret.append(urlConsulta).append("?");
 		ret.append(value);
