@@ -1,11 +1,15 @@
 package br.com.inloc.nfe4.autorizacao;
 
 import java.net.URL;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
 import java.util.List;
 
+import org.apache.axiom.om.OMAbstractFactory;
 import org.apache.axiom.om.OMElement;
+import org.apache.axiom.om.OMFactory;
+import org.apache.axiom.om.OMText;
 import org.apache.axiom.om.util.AXIOMUtil;
 
 import br.com.inloc.nfe4.autorizacao.NFeAutorizacao4Stub.NfeDadosMsg;
@@ -42,6 +46,7 @@ public class NFeAutorizacaoServico {
 		this.configuracao = configuracao;
 	}
 
+	@SuppressWarnings("unchecked")
 	public TRetEnviNFe autoriza(List<TNFe> nfe, String idLote) throws Exception {
 		CertificadoDigital.geraInformacoesCertificadoDigital(this.configuracao);
 		URL url = new URL(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceAutorizacao(this.configuracao.getAmbiente()));
@@ -54,21 +59,37 @@ public class NFeAutorizacaoServico {
 		tEnviNFe.getNFe().addAll(nfe);
 		tEnviNFe = TEnviNFe.xmlToObject(new AssinaturaDigital().assinaEnviNFe(tEnviNFe.getXML(), this.configuracao.getUrlCertificado(),
 				this.configuracao.getSenhaCertificado()));
+		OMElement ome;
 		if (nfce) {
+			List<String> qrCodes = new ArrayList<String>();
 			for (TNFe n : tEnviNFe.getNFe()) {
-				String qrCode = QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100", this.configuracao.getAmbiente().getId(), n.getInfNFe().getDest() == null
+				qrCodes.add(QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100", this.configuracao.getAmbiente().getId(), n.getInfNFe().getDest() == null
 						? null
 						: n.getInfNFe().getDest().getCNPJ() != null ? n.getInfNFe().getDest().getCNPJ() : n.getInfNFe().getDest().getCPF(), n.getInfNFe().getIde()
 						.getDhEmi(), n.getInfNFe().getTotal().getICMSTot().getVNF(), n.getInfNFe().getTotal().getICMSTot().getVICMS(), Base64.getEncoder()
 						.encodeToString(n.getSignature().getSignedInfo().getReference().getDigestValue()), this.configuracao.getIdToken(), this.configuracao.getCSC(),
-						Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente()));
+						Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente())));
 				n.setInfNFeSupl(objectFactory.createTNFeInfNFeSupl());
-				n.getInfNFeSupl().setQrCode("<![CDATA[" + qrCode + "]]>");
+				n.getInfNFeSupl().setQrCode("");
 				n.getInfNFeSupl().setUrlChave(
 						Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente()));
 			}
+			ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
+			List<Object> nfeElements = new ArrayList<>();
+			ome.getChildrenWithLocalName("NFe").forEachRemaining(nfeElements::add);
+			OMFactory omf = OMAbstractFactory.getOMFactory();
+			for (int i = 0; i < tEnviNFe.getNFe().size(); i++) {
+				OMText omtQrcode = omf.createOMText(qrCodes.get(i), OMElement.CDATA_SECTION_NODE);
+				List<Object> infNFeSuplElements = new ArrayList<>();
+				((OMElement) nfeElements.get(i)).getChildrenWithLocalName("infNFeSupl").forEachRemaining(infNFeSuplElements::add);
+				List<Object> qrCodeElements = new ArrayList<>();
+				((OMElement) infNFeSuplElements.get(0)).getChildrenWithLocalName("qrCode").forEachRemaining(qrCodeElements::add);
+				((OMElement) qrCodeElements.get(0)).addChild(omtQrcode);
+				tEnviNFe.getNFe().get(i).getInfNFeSupl().setQrCode("<![CDATA[" + qrCodes.get(i) + "]]>");
+			}
+		} else {
+			ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
 		}
-		OMElement ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
 		NfeDadosMsg nfeDadosMsg = new NFeAutorizacao4Stub.NfeDadosMsg();
 		nfeDadosMsg.setExtraElement(ome);
 		NFeAutorizacao4Stub nFeAutorizacao4Stub = new NFeAutorizacao4Stub(url.toString());
@@ -101,7 +122,7 @@ public class NFeAutorizacaoServico {
 			ide.setMod("65");
 			ide.setSerie(serie);
 			ide.setNNF(numeroNotaFiscal);
-			ide.setDhEmi("2017-12-29T16:24:28-02:00");
+			ide.setDhEmi("2018-01-11T17:23:28-02:00");
 			ide.setTpNF("1");
 			ide.setIdDest("1");
 			ide.setCMunFG("5208707"); // GOIANIA
