@@ -1,8 +1,8 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.8-b130911.1802 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa��o de Refer�ncia (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2017.12.26 às 12:32:45 PM BRST 
+// Todas as modifica��es neste arquivo ser�o perdidas ap�s a recompila��o do esquema de origem. 
+// Gerado em: 2018.01.12 �s 12:24:13 PM BRST 
 //
 
 package br.com.inloc.nfe4.autorizacao;
@@ -18,13 +18,13 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.transform.stream.StreamSource;
 
 /**
- * Tipo Retorno do Pedido de Autorização da Nota Fiscal Eletrônica
+ * Tipo Retorno do Pedido de Autoriza��o da Nota Fiscal Eletr�nica
  * 
  * <p>
  * Classe Java de TRetEnviNFe complex type.
  * 
  * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType name="TRetEnviNFe">
@@ -83,7 +83,7 @@ public class TRetEnviNFe {
 	protected String versao;
 
 	/**
-	 * Obtém o valor da propriedade tpAmb.
+	 * Obt�m o valor da propriedade tpAmb.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -104,7 +104,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade verAplic.
+	 * Obt�m o valor da propriedade verAplic.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -125,7 +125,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade cStat.
+	 * Obt�m o valor da propriedade cStat.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -146,7 +146,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade xMotivo.
+	 * Obt�m o valor da propriedade xMotivo.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -167,7 +167,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade cuf.
+	 * Obt�m o valor da propriedade cuf.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -188,7 +188,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade dhRecbto.
+	 * Obt�m o valor da propriedade dhRecbto.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -209,7 +209,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade infRec.
+	 * Obt�m o valor da propriedade infRec.
 	 * 
 	 * @return possible object is {@link TRetEnviNFe.InfRec }
 	 * 
@@ -230,7 +230,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade protNFe.
+	 * Obt�m o valor da propriedade protNFe.
 	 * 
 	 * @return possible object is {@link TProtNFe }
 	 * 
@@ -251,7 +251,7 @@ public class TRetEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade versao.
+	 * Obt�m o valor da propriedade versao.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -276,7 +276,7 @@ public class TRetEnviNFe {
 	 * Classe Java de anonymous complex type.
 	 * 
 	 * <p>
-	 * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+	 * O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
 	 * 
 	 * <pre>
 	 * &lt;complexType>
@@ -303,7 +303,7 @@ public class TRetEnviNFe {
 		protected String tMed;
 
 		/**
-		 * Obtém o valor da propriedade nRec.
+		 * Obt�m o valor da propriedade nRec.
 		 * 
 		 * @return possible object is {@link String }
 		 * 
@@ -324,7 +324,7 @@ public class TRetEnviNFe {
 		}
 
 		/**
-		 * Obtém o valor da propriedade tMed.
+		 * Obt�m o valor da propriedade tMed.
 		 * 
 		 * @return possible object is {@link String }
 		 * 
@@ -343,12 +343,10 @@ public class TRetEnviNFe {
 		public void setTMed(String value) {
 			this.tMed = value;
 		}
-
 	}
 
 	public static TRetEnviNFe xmlToObject(String xml) throws Exception {
 		JAXBContext context = JAXBContext.newInstance(TRetEnviNFe.class);
 		return context.createUnmarshaller().unmarshal(new StreamSource(new StringReader(xml)), TRetEnviNFe.class).getValue();
 	}
-
 }

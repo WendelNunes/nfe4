@@ -1,8 +1,8 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para ImplementaÃ§Ã£o de ReferÃªncia (JAXB) de Bind XML, v2.2.8-b130911.1802 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificaÃ§Ãµes neste arquivo serÃ£o perdidas apÃ³s a recompilaÃ§Ã£o do esquema de origem. 
-// Gerado em: 2017.12.26 Ã s 12:32:45 PM BRST 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.01.12 às 12:24:13 PM BRST 
 //
 
 
@@ -25,11 +25,11 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * Tipo Nota Fiscal EletrÃ´nica
+ * Tipo Nota Fiscal Eletrônica
  * 
  * <p>Classe Java de TNFe complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType name="TNFe">
@@ -424,7 +424,7 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  *                                 &lt;simpleType>
  *                                   &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
  *                                     &lt;whiteSpace value="preserve"/>
- *                                     &lt;pattern value="([!-Ã¿]{0}|[!-Ã¿]{5,20})?"/>
+ *                                     &lt;pattern value="([!-ÿ]{0}|[!-ÿ]{5,20})?"/>
  *                                   &lt;/restriction>
  *                                 &lt;/simpleType>
  *                               &lt;/element>
@@ -3168,7 +3168,7 @@ public class TNFe {
     protected SignatureType signature;
 
     /**
-     * ObtÃ©m o valor da propriedade infNFe.
+     * Obtém o valor da propriedade infNFe.
      * 
      * @return
      *     possible object is
@@ -3192,7 +3192,7 @@ public class TNFe {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade infNFeSupl.
+     * Obtém o valor da propriedade infNFeSupl.
      * 
      * @return
      *     possible object is
@@ -3216,7 +3216,7 @@ public class TNFe {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade signature.
+     * Obtém o valor da propriedade signature.
      * 
      * @return
      *     possible object is
@@ -3243,7 +3243,7 @@ public class TNFe {
     /**
      * <p>Classe Java de anonymous complex type.
      * 
-     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -3633,7 +3633,7 @@ public class TNFe {
      *                       &lt;simpleType>
      *                         &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
      *                           &lt;whiteSpace value="preserve"/>
-     *                           &lt;pattern value="([!-Ã¿]{0}|[!-Ã¿]{5,20})?"/>
+     *                           &lt;pattern value="([!-ÿ]{0}|[!-ÿ]{5,20})?"/>
      *                         &lt;/restriction>
      *                       &lt;/simpleType>
      *                     &lt;/element>
@@ -6379,7 +6379,7 @@ public class TNFe {
         protected String id;
 
         /**
-         * ObtÃ©m o valor da propriedade ide.
+         * Obtém o valor da propriedade ide.
          * 
          * @return
          *     possible object is
@@ -6403,7 +6403,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade emit.
+         * Obtém o valor da propriedade emit.
          * 
          * @return
          *     possible object is
@@ -6427,7 +6427,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade avulsa.
+         * Obtém o valor da propriedade avulsa.
          * 
          * @return
          *     possible object is
@@ -6451,7 +6451,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade dest.
+         * Obtém o valor da propriedade dest.
          * 
          * @return
          *     possible object is
@@ -6475,7 +6475,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade retirada.
+         * Obtém o valor da propriedade retirada.
          * 
          * @return
          *     possible object is
@@ -6499,7 +6499,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade entrega.
+         * Obtém o valor da propriedade entrega.
          * 
          * @return
          *     possible object is
@@ -6581,7 +6581,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade total.
+         * Obtém o valor da propriedade total.
          * 
          * @return
          *     possible object is
@@ -6605,7 +6605,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade transp.
+         * Obtém o valor da propriedade transp.
          * 
          * @return
          *     possible object is
@@ -6629,7 +6629,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade cobr.
+         * Obtém o valor da propriedade cobr.
          * 
          * @return
          *     possible object is
@@ -6653,7 +6653,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade pag.
+         * Obtém o valor da propriedade pag.
          * 
          * @return
          *     possible object is
@@ -6677,7 +6677,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade infAdic.
+         * Obtém o valor da propriedade infAdic.
          * 
          * @return
          *     possible object is
@@ -6701,7 +6701,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade exporta.
+         * Obtém o valor da propriedade exporta.
          * 
          * @return
          *     possible object is
@@ -6725,7 +6725,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade compra.
+         * Obtém o valor da propriedade compra.
          * 
          * @return
          *     possible object is
@@ -6749,7 +6749,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade cana.
+         * Obtém o valor da propriedade cana.
          * 
          * @return
          *     possible object is
@@ -6773,7 +6773,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade versao.
+         * Obtém o valor da propriedade versao.
          * 
          * @return
          *     possible object is
@@ -6797,7 +6797,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade id.
+         * Obtém o valor da propriedade id.
          * 
          * @return
          *     possible object is
@@ -6824,7 +6824,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -6854,7 +6854,7 @@ public class TNFe {
             protected String cpf;
 
             /**
-             * ObtÃ©m o valor da propriedade cnpj.
+             * Obtém o valor da propriedade cnpj.
              * 
              * @return
              *     possible object is
@@ -6878,7 +6878,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cpf.
+             * Obtém o valor da propriedade cpf.
              * 
              * @return
              *     possible object is
@@ -6907,7 +6907,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -7013,7 +7013,7 @@ public class TNFe {
             protected String dPag;
 
             /**
-             * ObtÃ©m o valor da propriedade cnpj.
+             * Obtém o valor da propriedade cnpj.
              * 
              * @return
              *     possible object is
@@ -7037,7 +7037,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xOrgao.
+             * Obtém o valor da propriedade xOrgao.
              * 
              * @return
              *     possible object is
@@ -7061,7 +7061,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade matr.
+             * Obtém o valor da propriedade matr.
              * 
              * @return
              *     possible object is
@@ -7085,7 +7085,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xAgente.
+             * Obtém o valor da propriedade xAgente.
              * 
              * @return
              *     possible object is
@@ -7109,7 +7109,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade fone.
+             * Obtém o valor da propriedade fone.
              * 
              * @return
              *     possible object is
@@ -7133,7 +7133,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade uf.
+             * Obtém o valor da propriedade uf.
              * 
              * @return
              *     possible object is
@@ -7157,7 +7157,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade ndar.
+             * Obtém o valor da propriedade ndar.
              * 
              * @return
              *     possible object is
@@ -7181,7 +7181,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade dEmi.
+             * Obtém o valor da propriedade dEmi.
              * 
              * @return
              *     possible object is
@@ -7205,7 +7205,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vdar.
+             * Obtém o valor da propriedade vdar.
              * 
              * @return
              *     possible object is
@@ -7229,7 +7229,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade repEmi.
+             * Obtém o valor da propriedade repEmi.
              * 
              * @return
              *     possible object is
@@ -7253,7 +7253,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade dPag.
+             * Obtém o valor da propriedade dPag.
              * 
              * @return
              *     possible object is
@@ -7282,7 +7282,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -7393,7 +7393,7 @@ public class TNFe {
             protected String vLiqFor;
 
             /**
-             * ObtÃ©m o valor da propriedade safra.
+             * Obtém o valor da propriedade safra.
              * 
              * @return
              *     possible object is
@@ -7417,7 +7417,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade ref.
+             * Obtém o valor da propriedade ref.
              * 
              * @return
              *     possible object is
@@ -7470,7 +7470,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade qTotMes.
+             * Obtém o valor da propriedade qTotMes.
              * 
              * @return
              *     possible object is
@@ -7494,7 +7494,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade qTotAnt.
+             * Obtém o valor da propriedade qTotAnt.
              * 
              * @return
              *     possible object is
@@ -7518,7 +7518,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade qTotGer.
+             * Obtém o valor da propriedade qTotGer.
              * 
              * @return
              *     possible object is
@@ -7571,7 +7571,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vFor.
+             * Obtém o valor da propriedade vFor.
              * 
              * @return
              *     possible object is
@@ -7595,7 +7595,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vTotDed.
+             * Obtém o valor da propriedade vTotDed.
              * 
              * @return
              *     possible object is
@@ -7619,7 +7619,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vLiqFor.
+             * Obtém o valor da propriedade vLiqFor.
              * 
              * @return
              *     possible object is
@@ -7646,7 +7646,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -7683,7 +7683,7 @@ public class TNFe {
                 protected String vDed;
 
                 /**
-                 * ObtÃ©m o valor da propriedade xDed.
+                 * Obtém o valor da propriedade xDed.
                  * 
                  * @return
                  *     possible object is
@@ -7707,7 +7707,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDed.
+                 * Obtém o valor da propriedade vDed.
                  * 
                  * @return
                  *     possible object is
@@ -7736,7 +7736,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -7772,7 +7772,7 @@ public class TNFe {
                 protected String dia;
 
                 /**
-                 * ObtÃ©m o valor da propriedade qtde.
+                 * Obtém o valor da propriedade qtde.
                  * 
                  * @return
                  *     possible object is
@@ -7796,7 +7796,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade dia.
+                 * Obtém o valor da propriedade dia.
                  * 
                  * @return
                  *     possible object is
@@ -7827,7 +7827,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -7894,7 +7894,7 @@ public class TNFe {
             protected List<TNFe.InfNFe.Cobr.Dup> dup;
 
             /**
-             * ObtÃ©m o valor da propriedade fat.
+             * Obtém o valor da propriedade fat.
              * 
              * @return
              *     possible object is
@@ -7950,7 +7950,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -7989,7 +7989,7 @@ public class TNFe {
                 protected String vDup;
 
                 /**
-                 * ObtÃ©m o valor da propriedade nDup.
+                 * Obtém o valor da propriedade nDup.
                  * 
                  * @return
                  *     possible object is
@@ -8013,7 +8013,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade dVenc.
+                 * Obtém o valor da propriedade dVenc.
                  * 
                  * @return
                  *     possible object is
@@ -8037,7 +8037,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDup.
+                 * Obtém o valor da propriedade vDup.
                  * 
                  * @return
                  *     possible object is
@@ -8066,7 +8066,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -8107,7 +8107,7 @@ public class TNFe {
                 protected String vLiq;
 
                 /**
-                 * ObtÃ©m o valor da propriedade nFat.
+                 * Obtém o valor da propriedade nFat.
                  * 
                  * @return
                  *     possible object is
@@ -8131,7 +8131,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vOrig.
+                 * Obtém o valor da propriedade vOrig.
                  * 
                  * @return
                  *     possible object is
@@ -8155,7 +8155,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDesc.
+                 * Obtém o valor da propriedade vDesc.
                  * 
                  * @return
                  *     possible object is
@@ -8179,7 +8179,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vLiq.
+                 * Obtém o valor da propriedade vLiq.
                  * 
                  * @return
                  *     possible object is
@@ -8210,7 +8210,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -8263,7 +8263,7 @@ public class TNFe {
             protected String xCont;
 
             /**
-             * ObtÃ©m o valor da propriedade xnEmp.
+             * Obtém o valor da propriedade xnEmp.
              * 
              * @return
              *     possible object is
@@ -8287,7 +8287,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xPed.
+             * Obtém o valor da propriedade xPed.
              * 
              * @return
              *     possible object is
@@ -8311,7 +8311,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xCont.
+             * Obtém o valor da propriedade xCont.
              * 
              * @return
              *     possible object is
@@ -8340,7 +8340,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -8354,7 +8354,7 @@ public class TNFe {
          *             &lt;simpleType>
          *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}string">
          *                 &lt;whiteSpace value="preserve"/>
-         *                 &lt;pattern value="([!-Ã¿]{0}|[!-Ã¿]{5,20})?"/>
+         *                 &lt;pattern value="([!-ÿ]{0}|[!-ÿ]{5,20})?"/>
          *               &lt;/restriction>
          *             &lt;/simpleType>
          *           &lt;/element>
@@ -8445,7 +8445,7 @@ public class TNFe {
             protected String email;
 
             /**
-             * ObtÃ©m o valor da propriedade cnpj.
+             * Obtém o valor da propriedade cnpj.
              * 
              * @return
              *     possible object is
@@ -8469,7 +8469,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cpf.
+             * Obtém o valor da propriedade cpf.
              * 
              * @return
              *     possible object is
@@ -8493,7 +8493,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade idEstrangeiro.
+             * Obtém o valor da propriedade idEstrangeiro.
              * 
              * @return
              *     possible object is
@@ -8517,7 +8517,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xNome.
+             * Obtém o valor da propriedade xNome.
              * 
              * @return
              *     possible object is
@@ -8541,7 +8541,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade enderDest.
+             * Obtém o valor da propriedade enderDest.
              * 
              * @return
              *     possible object is
@@ -8565,7 +8565,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade indIEDest.
+             * Obtém o valor da propriedade indIEDest.
              * 
              * @return
              *     possible object is
@@ -8589,7 +8589,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade ie.
+             * Obtém o valor da propriedade ie.
              * 
              * @return
              *     possible object is
@@ -8613,7 +8613,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade isuf.
+             * Obtém o valor da propriedade isuf.
              * 
              * @return
              *     possible object is
@@ -8637,7 +8637,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade im.
+             * Obtém o valor da propriedade im.
              * 
              * @return
              *     possible object is
@@ -8661,7 +8661,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade email.
+             * Obtém o valor da propriedade email.
              * 
              * @return
              *     possible object is
@@ -8690,7 +8690,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -10683,7 +10683,7 @@ public class TNFe {
             protected String nItem;
 
             /**
-             * ObtÃ©m o valor da propriedade prod.
+             * Obtém o valor da propriedade prod.
              * 
              * @return
              *     possible object is
@@ -10707,7 +10707,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade imposto.
+             * Obtém o valor da propriedade imposto.
              * 
              * @return
              *     possible object is
@@ -10731,7 +10731,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade impostoDevol.
+             * Obtém o valor da propriedade impostoDevol.
              * 
              * @return
              *     possible object is
@@ -10755,7 +10755,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade infAdProd.
+             * Obtém o valor da propriedade infAdProd.
              * 
              * @return
              *     possible object is
@@ -10779,7 +10779,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade nItem.
+             * Obtém o valor da propriedade nItem.
              * 
              * @return
              *     possible object is
@@ -10806,7 +10806,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -12033,28 +12033,28 @@ public class TNFe {
                 @XmlElementRefs({
                     @XmlElementRef(name = "IPI", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "II", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
-                    @XmlElementRef(name = "ISSQN", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "ICMSUFDest", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
-                    @XmlElementRef(name = "COFINS", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "vTotTrib", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "ICMS", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "PIS", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
+                    @XmlElementRef(name = "COFINS", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "PISST", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
+                    @XmlElementRef(name = "ISSQN", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false),
                     @XmlElementRef(name = "COFINSST", namespace = "http://www.portalfiscal.inf.br/nfe", type = JAXBElement.class, required = false)
                 })
                 protected List<JAXBElement<?>> content;
 
                 /**
-                 * ObtÃ©m o restante do modelo do conteÃºdo. 
+                 * Obtém o restante do modelo do conteúdo. 
                  * 
                  * <p>
-                 * VocÃª estÃ¡ obtendo esta propriedade "catch-all" pelo seguinte motivo: 
-                 * O nome do campo "IPI" Ã© usado por duas partes diferentes de um esquema. Consulte: 
-                 * linha 3558 de file:/F:/Desenvolvimento/workspaceLuna/NFe4/PL_009_V4_2017_001/leiauteNFe_v4.00.xsd
-                 * linha 3526 de file:/F:/Desenvolvimento/workspaceLuna/NFe4/PL_009_V4_2017_001/leiauteNFe_v4.00.xsd
+                 * Você está obtendo esta propriedade "catch-all" pelo seguinte motivo: 
+                 * O nome do campo "IPI" é usado por duas partes diferentes de um esquema. Consulte: 
+                 * linha 3558 de file:/C:/Users/INLOC01/Desktop/NFeSefaz/PL_009_V4_2017_001/leiauteNFe_v4.00.xsd
+                 * linha 3526 de file:/C:/Users/INLOC01/Desktop/NFeSefaz/PL_009_V4_2017_001/leiauteNFe_v4.00.xsd
                  * <p>
-                 * Para eliminar esta propriedade, aplique uma personalizaÃ§Ã£o de propriedade a uma 
-                 * das seguintes declaraÃ§Ãµes, a fim de alterar seus nomes: 
+                 * Para eliminar esta propriedade, aplique uma personalização de propriedade a uma 
+                 * das seguintes declarações, a fim de alterar seus nomes: 
                  * Gets the value of the content property.
                  * 
                  * <p>
@@ -12074,13 +12074,13 @@ public class TNFe {
                  * Objects of the following type(s) are allowed in the list
                  * {@link JAXBElement }{@code <}{@link TIpi }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.II }{@code >}
-                 * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.ISSQN }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.ICMSUFDest }{@code >}
-                 * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.COFINS }{@code >}
                  * {@link JAXBElement }{@code <}{@link String }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.ICMS }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.PIS }{@code >}
+                 * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.COFINS }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.PISST }{@code >}
+                 * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.ISSQN }{@code >}
                  * {@link JAXBElement }{@code <}{@link TNFe.InfNFe.Det.Imposto.COFINSST }{@code >}
                  * 
                  * 
@@ -12096,7 +12096,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -12247,7 +12247,7 @@ public class TNFe {
                     protected TNFe.InfNFe.Det.Imposto.COFINS.COFINSOutr cofinsOutr;
 
                     /**
-                     * ObtÃ©m o valor da propriedade cofinsAliq.
+                     * Obtém o valor da propriedade cofinsAliq.
                      * 
                      * @return
                      *     possible object is
@@ -12271,7 +12271,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cofinsQtde.
+                     * Obtém o valor da propriedade cofinsQtde.
                      * 
                      * @return
                      *     possible object is
@@ -12295,7 +12295,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cofinsnt.
+                     * Obtém o valor da propriedade cofinsnt.
                      * 
                      * @return
                      *     possible object is
@@ -12319,7 +12319,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cofinsOutr.
+                     * Obtém o valor da propriedade cofinsOutr.
                      * 
                      * @return
                      *     possible object is
@@ -12346,7 +12346,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -12392,7 +12392,7 @@ public class TNFe {
                         protected String vcofins;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -12416,7 +12416,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -12440,7 +12440,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pcofins.
+                         * Obtém o valor da propriedade pcofins.
                          * 
                          * @return
                          *     possible object is
@@ -12464,7 +12464,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vcofins.
+                         * Obtém o valor da propriedade vcofins.
                          * 
                          * @return
                          *     possible object is
@@ -12493,7 +12493,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -12531,7 +12531,7 @@ public class TNFe {
                         protected String cst;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -12560,7 +12560,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -12641,7 +12641,7 @@ public class TNFe {
                         protected String vcofins;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -12665,7 +12665,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -12689,7 +12689,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pcofins.
+                         * Obtém o valor da propriedade pcofins.
                          * 
                          * @return
                          *     possible object is
@@ -12713,7 +12713,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade qbcProd.
+                         * Obtém o valor da propriedade qbcProd.
                          * 
                          * @return
                          *     possible object is
@@ -12737,7 +12737,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vAliqProd.
+                         * Obtém o valor da propriedade vAliqProd.
                          * 
                          * @return
                          *     possible object is
@@ -12761,7 +12761,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vcofins.
+                         * Obtém o valor da propriedade vcofins.
                          * 
                          * @return
                          *     possible object is
@@ -12790,7 +12790,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -12834,7 +12834,7 @@ public class TNFe {
                         protected String vcofins;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -12858,7 +12858,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade qbcProd.
+                         * Obtém o valor da propriedade qbcProd.
                          * 
                          * @return
                          *     possible object is
@@ -12882,7 +12882,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vAliqProd.
+                         * Obtém o valor da propriedade vAliqProd.
                          * 
                          * @return
                          *     possible object is
@@ -12906,7 +12906,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vcofins.
+                         * Obtém o valor da propriedade vcofins.
                          * 
                          * @return
                          *     possible object is
@@ -12937,7 +12937,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -12984,7 +12984,7 @@ public class TNFe {
                     protected String vcofins;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbc.
+                     * Obtém o valor da propriedade vbc.
                      * 
                      * @return
                      *     possible object is
@@ -13008,7 +13008,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pcofins.
+                     * Obtém o valor da propriedade pcofins.
                      * 
                      * @return
                      *     possible object is
@@ -13032,7 +13032,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade qbcProd.
+                     * Obtém o valor da propriedade qbcProd.
                      * 
                      * @return
                      *     possible object is
@@ -13056,7 +13056,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vAliqProd.
+                     * Obtém o valor da propriedade vAliqProd.
                      * 
                      * @return
                      *     possible object is
@@ -13080,7 +13080,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vcofins.
+                     * Obtém o valor da propriedade vcofins.
                      * 
                      * @return
                      *     possible object is
@@ -13109,7 +13109,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -13957,7 +13957,7 @@ public class TNFe {
                     protected TNFe.InfNFe.Det.Imposto.ICMS.ICMSSN900 icmssn900;
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms00.
+                     * Obtém o valor da propriedade icms00.
                      * 
                      * @return
                      *     possible object is
@@ -13981,7 +13981,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms10.
+                     * Obtém o valor da propriedade icms10.
                      * 
                      * @return
                      *     possible object is
@@ -14005,7 +14005,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms20.
+                     * Obtém o valor da propriedade icms20.
                      * 
                      * @return
                      *     possible object is
@@ -14029,7 +14029,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms30.
+                     * Obtém o valor da propriedade icms30.
                      * 
                      * @return
                      *     possible object is
@@ -14053,7 +14053,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms40.
+                     * Obtém o valor da propriedade icms40.
                      * 
                      * @return
                      *     possible object is
@@ -14077,7 +14077,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms51.
+                     * Obtém o valor da propriedade icms51.
                      * 
                      * @return
                      *     possible object is
@@ -14101,7 +14101,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms60.
+                     * Obtém o valor da propriedade icms60.
                      * 
                      * @return
                      *     possible object is
@@ -14125,7 +14125,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms70.
+                     * Obtém o valor da propriedade icms70.
                      * 
                      * @return
                      *     possible object is
@@ -14149,7 +14149,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icms90.
+                     * Obtém o valor da propriedade icms90.
                      * 
                      * @return
                      *     possible object is
@@ -14173,7 +14173,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmsPart.
+                     * Obtém o valor da propriedade icmsPart.
                      * 
                      * @return
                      *     possible object is
@@ -14197,7 +14197,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmsst.
+                     * Obtém o valor da propriedade icmsst.
                      * 
                      * @return
                      *     possible object is
@@ -14221,7 +14221,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn101.
+                     * Obtém o valor da propriedade icmssn101.
                      * 
                      * @return
                      *     possible object is
@@ -14245,7 +14245,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn102.
+                     * Obtém o valor da propriedade icmssn102.
                      * 
                      * @return
                      *     possible object is
@@ -14269,7 +14269,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn201.
+                     * Obtém o valor da propriedade icmssn201.
                      * 
                      * @return
                      *     possible object is
@@ -14293,7 +14293,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn202.
+                     * Obtém o valor da propriedade icmssn202.
                      * 
                      * @return
                      *     possible object is
@@ -14317,7 +14317,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn500.
+                     * Obtém o valor da propriedade icmssn500.
                      * 
                      * @return
                      *     possible object is
@@ -14341,7 +14341,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade icmssn900.
+                     * Obtém o valor da propriedade icmssn900.
                      * 
                      * @return
                      *     possible object is
@@ -14368,7 +14368,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -14441,7 +14441,7 @@ public class TNFe {
                         protected String vfcp;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -14465,7 +14465,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -14489,7 +14489,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -14513,7 +14513,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -14537,7 +14537,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -14561,7 +14561,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -14585,7 +14585,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -14609,7 +14609,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -14638,7 +14638,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -14764,7 +14764,7 @@ public class TNFe {
                         protected String vfcpst;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -14788,7 +14788,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -14812,7 +14812,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -14836,7 +14836,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -14860,7 +14860,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -14884,7 +14884,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -14908,7 +14908,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcp.
+                         * Obtém o valor da propriedade vbcfcp.
                          * 
                          * @return
                          *     possible object is
@@ -14932,7 +14932,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -14956,7 +14956,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -14980,7 +14980,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -15004,7 +15004,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -15028,7 +15028,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -15052,7 +15052,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -15076,7 +15076,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -15100,7 +15100,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -15124,7 +15124,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15148,7 +15148,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15172,7 +15172,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15201,7 +15201,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -15300,7 +15300,7 @@ public class TNFe {
                         protected String motDesICMS;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -15324,7 +15324,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -15348,7 +15348,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -15372,7 +15372,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -15396,7 +15396,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -15420,7 +15420,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -15444,7 +15444,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -15468,7 +15468,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcp.
+                         * Obtém o valor da propriedade vbcfcp.
                          * 
                          * @return
                          *     possible object is
@@ -15492,7 +15492,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -15516,7 +15516,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -15540,7 +15540,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDeson.
+                         * Obtém o valor da propriedade vicmsDeson.
                          * 
                          * @return
                          *     possible object is
@@ -15564,7 +15564,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade motDesICMS.
+                         * Obtém o valor da propriedade motDesICMS.
                          * 
                          * @return
                          *     possible object is
@@ -15593,7 +15593,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -15697,7 +15697,7 @@ public class TNFe {
                         protected String motDesICMS;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -15721,7 +15721,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -15745,7 +15745,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -15769,7 +15769,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -15793,7 +15793,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -15817,7 +15817,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -15841,7 +15841,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -15865,7 +15865,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -15889,7 +15889,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15913,7 +15913,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15937,7 +15937,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -15961,7 +15961,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDeson.
+                         * Obtém o valor da propriedade vicmsDeson.
                          * 
                          * @return
                          *     possible object is
@@ -15985,7 +15985,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade motDesICMS.
+                         * Obtém o valor da propriedade motDesICMS.
                          * 
                          * @return
                          *     possible object is
@@ -16014,7 +16014,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -16079,7 +16079,7 @@ public class TNFe {
                         protected String motDesICMS;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -16103,7 +16103,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -16127,7 +16127,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDeson.
+                         * Obtém o valor da propriedade vicmsDeson.
                          * 
                          * @return
                          *     possible object is
@@ -16151,7 +16151,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade motDesICMS.
+                         * Obtém o valor da propriedade motDesICMS.
                          * 
                          * @return
                          *     possible object is
@@ -16180,7 +16180,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -16270,7 +16270,7 @@ public class TNFe {
                         protected String vfcp;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -16294,7 +16294,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -16318,7 +16318,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -16342,7 +16342,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -16366,7 +16366,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -16390,7 +16390,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -16414,7 +16414,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsOp.
+                         * Obtém o valor da propriedade vicmsOp.
                          * 
                          * @return
                          *     possible object is
@@ -16438,7 +16438,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pDif.
+                         * Obtém o valor da propriedade pDif.
                          * 
                          * @return
                          *     possible object is
@@ -16462,7 +16462,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDif.
+                         * Obtém o valor da propriedade vicmsDif.
                          * 
                          * @return
                          *     possible object is
@@ -16486,7 +16486,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -16510,7 +16510,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcp.
+                         * Obtém o valor da propriedade vbcfcp.
                          * 
                          * @return
                          *     possible object is
@@ -16534,7 +16534,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -16558,7 +16558,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -16587,7 +16587,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -16652,7 +16652,7 @@ public class TNFe {
                         protected String vfcpstRet;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -16676,7 +16676,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -16700,7 +16700,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcstRet.
+                         * Obtém o valor da propriedade vbcstRet.
                          * 
                          * @return
                          *     possible object is
@@ -16724,7 +16724,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pst.
+                         * Obtém o valor da propriedade pst.
                          * 
                          * @return
                          *     possible object is
@@ -16748,7 +16748,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsstRet.
+                         * Obtém o valor da propriedade vicmsstRet.
                          * 
                          * @return
                          *     possible object is
@@ -16772,7 +16772,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpstRet.
+                         * Obtém o valor da propriedade vbcfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -16796,7 +16796,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpstRet.
+                         * Obtém o valor da propriedade pfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -16820,7 +16820,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpstRet.
+                         * Obtém o valor da propriedade vfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -16849,7 +16849,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -16997,7 +16997,7 @@ public class TNFe {
                         protected String motDesICMS;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -17021,7 +17021,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -17045,7 +17045,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -17069,7 +17069,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -17093,7 +17093,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -17117,7 +17117,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -17141,7 +17141,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -17165,7 +17165,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcp.
+                         * Obtém o valor da propriedade vbcfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17189,7 +17189,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17213,7 +17213,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17237,7 +17237,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -17261,7 +17261,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -17285,7 +17285,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -17309,7 +17309,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -17333,7 +17333,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -17357,7 +17357,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -17381,7 +17381,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -17405,7 +17405,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -17429,7 +17429,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -17453,7 +17453,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDeson.
+                         * Obtém o valor da propriedade vicmsDeson.
                          * 
                          * @return
                          *     possible object is
@@ -17477,7 +17477,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade motDesICMS.
+                         * Obtém o valor da propriedade motDesICMS.
                          * 
                          * @return
                          *     possible object is
@@ -17506,7 +17506,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -17655,7 +17655,7 @@ public class TNFe {
                         protected String motDesICMS;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -17679,7 +17679,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -17703,7 +17703,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -17727,7 +17727,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -17751,7 +17751,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -17775,7 +17775,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -17799,7 +17799,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -17823,7 +17823,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcp.
+                         * Obtém o valor da propriedade vbcfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17847,7 +17847,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcp.
+                         * Obtém o valor da propriedade pfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17871,7 +17871,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcp.
+                         * Obtém o valor da propriedade vfcp.
                          * 
                          * @return
                          *     possible object is
@@ -17895,7 +17895,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -17919,7 +17919,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -17943,7 +17943,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -17967,7 +17967,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -17991,7 +17991,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -18015,7 +18015,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -18039,7 +18039,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -18063,7 +18063,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -18087,7 +18087,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -18111,7 +18111,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsDeson.
+                         * Obtém o valor da propriedade vicmsDeson.
                          * 
                          * @return
                          *     possible object is
@@ -18135,7 +18135,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade motDesICMS.
+                         * Obtém o valor da propriedade motDesICMS.
                          * 
                          * @return
                          *     possible object is
@@ -18164,7 +18164,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -18275,7 +18275,7 @@ public class TNFe {
                         protected TUf ufst;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -18299,7 +18299,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -18323,7 +18323,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -18347,7 +18347,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -18371,7 +18371,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -18395,7 +18395,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -18419,7 +18419,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -18443,7 +18443,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -18467,7 +18467,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -18491,7 +18491,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -18515,7 +18515,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -18539,7 +18539,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -18563,7 +18563,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -18587,7 +18587,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pbcOp.
+                         * Obtém o valor da propriedade pbcOp.
                          * 
                          * @return
                          *     possible object is
@@ -18611,7 +18611,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade ufst.
+                         * Obtém o valor da propriedade ufst.
                          * 
                          * @return
                          *     possible object is
@@ -18640,7 +18640,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -18685,7 +18685,7 @@ public class TNFe {
                         protected String vCredICMSSN;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -18709,7 +18709,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -18733,7 +18733,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pCredSN.
+                         * Obtém o valor da propriedade pCredSN.
                          * 
                          * @return
                          *     possible object is
@@ -18757,7 +18757,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vCredICMSSN.
+                         * Obtém o valor da propriedade vCredICMSSN.
                          * 
                          * @return
                          *     possible object is
@@ -18786,7 +18786,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -18826,7 +18826,7 @@ public class TNFe {
                         protected String csosn;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -18850,7 +18850,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -18879,7 +18879,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -18973,7 +18973,7 @@ public class TNFe {
                         protected String vCredICMSSN;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -18997,7 +18997,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -19021,7 +19021,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -19045,7 +19045,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -19069,7 +19069,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -19093,7 +19093,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -19117,7 +19117,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -19141,7 +19141,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -19165,7 +19165,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19189,7 +19189,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19213,7 +19213,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19237,7 +19237,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pCredSN.
+                         * Obtém o valor da propriedade pCredSN.
                          * 
                          * @return
                          *     possible object is
@@ -19261,7 +19261,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vCredICMSSN.
+                         * Obtém o valor da propriedade vCredICMSSN.
                          * 
                          * @return
                          *     possible object is
@@ -19290,7 +19290,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -19377,7 +19377,7 @@ public class TNFe {
                         protected String vfcpst;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -19401,7 +19401,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -19425,7 +19425,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -19449,7 +19449,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -19473,7 +19473,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -19497,7 +19497,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -19521,7 +19521,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -19545,7 +19545,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -19569,7 +19569,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19593,7 +19593,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19617,7 +19617,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -19646,7 +19646,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -19711,7 +19711,7 @@ public class TNFe {
                         protected String vfcpstRet;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -19735,7 +19735,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -19759,7 +19759,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcstRet.
+                         * Obtém o valor da propriedade vbcstRet.
                          * 
                          * @return
                          *     possible object is
@@ -19783,7 +19783,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pst.
+                         * Obtém o valor da propriedade pst.
                          * 
                          * @return
                          *     possible object is
@@ -19807,7 +19807,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsstRet.
+                         * Obtém o valor da propriedade vicmsstRet.
                          * 
                          * @return
                          *     possible object is
@@ -19831,7 +19831,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpstRet.
+                         * Obtém o valor da propriedade vbcfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -19855,7 +19855,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpstRet.
+                         * Obtém o valor da propriedade pfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -19879,7 +19879,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpstRet.
+                         * Obtém o valor da propriedade vfcpstRet.
                          * 
                          * @return
                          *     possible object is
@@ -19908,7 +19908,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -20033,7 +20033,7 @@ public class TNFe {
                         protected String vCredICMSSN;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -20057,7 +20057,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade csosn.
+                         * Obtém o valor da propriedade csosn.
                          * 
                          * @return
                          *     possible object is
@@ -20081,7 +20081,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBC.
+                         * Obtém o valor da propriedade modBC.
                          * 
                          * @return
                          *     possible object is
@@ -20105,7 +20105,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -20129,7 +20129,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBC.
+                         * Obtém o valor da propriedade pRedBC.
                          * 
                          * @return
                          *     possible object is
@@ -20153,7 +20153,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picms.
+                         * Obtém o valor da propriedade picms.
                          * 
                          * @return
                          *     possible object is
@@ -20177,7 +20177,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicms.
+                         * Obtém o valor da propriedade vicms.
                          * 
                          * @return
                          *     possible object is
@@ -20201,7 +20201,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade modBCST.
+                         * Obtém o valor da propriedade modBCST.
                          * 
                          * @return
                          *     possible object is
@@ -20225,7 +20225,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pmvast.
+                         * Obtém o valor da propriedade pmvast.
                          * 
                          * @return
                          *     possible object is
@@ -20249,7 +20249,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pRedBCST.
+                         * Obtém o valor da propriedade pRedBCST.
                          * 
                          * @return
                          *     possible object is
@@ -20273,7 +20273,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcst.
+                         * Obtém o valor da propriedade vbcst.
                          * 
                          * @return
                          *     possible object is
@@ -20297,7 +20297,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade picmsst.
+                         * Obtém o valor da propriedade picmsst.
                          * 
                          * @return
                          *     possible object is
@@ -20321,7 +20321,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsst.
+                         * Obtém o valor da propriedade vicmsst.
                          * 
                          * @return
                          *     possible object is
@@ -20345,7 +20345,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcfcpst.
+                         * Obtém o valor da propriedade vbcfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -20369,7 +20369,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pfcpst.
+                         * Obtém o valor da propriedade pfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -20393,7 +20393,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vfcpst.
+                         * Obtém o valor da propriedade vfcpst.
                          * 
                          * @return
                          *     possible object is
@@ -20417,7 +20417,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade pCredSN.
+                         * Obtém o valor da propriedade pCredSN.
                          * 
                          * @return
                          *     possible object is
@@ -20441,7 +20441,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vCredICMSSN.
+                         * Obtém o valor da propriedade vCredICMSSN.
                          * 
                          * @return
                          *     possible object is
@@ -20470,7 +20470,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -20524,7 +20524,7 @@ public class TNFe {
                         protected String vicmsstDest;
 
                         /**
-                         * ObtÃ©m o valor da propriedade orig.
+                         * Obtém o valor da propriedade orig.
                          * 
                          * @return
                          *     possible object is
@@ -20548,7 +20548,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -20572,7 +20572,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcstRet.
+                         * Obtém o valor da propriedade vbcstRet.
                          * 
                          * @return
                          *     possible object is
@@ -20596,7 +20596,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsstRet.
+                         * Obtém o valor da propriedade vicmsstRet.
                          * 
                          * @return
                          *     possible object is
@@ -20620,7 +20620,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbcstDest.
+                         * Obtém o valor da propriedade vbcstDest.
                          * 
                          * @return
                          *     possible object is
@@ -20644,7 +20644,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vicmsstDest.
+                         * Obtém o valor da propriedade vicmsstDest.
                          * 
                          * @return
                          *     possible object is
@@ -20675,7 +20675,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -20742,7 +20742,7 @@ public class TNFe {
                     protected String vicmsufRemet;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbcufDest.
+                     * Obtém o valor da propriedade vbcufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20766,7 +20766,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbcfcpufDest.
+                     * Obtém o valor da propriedade vbcfcpufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20790,7 +20790,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pfcpufDest.
+                     * Obtém o valor da propriedade pfcpufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20814,7 +20814,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade picmsufDest.
+                     * Obtém o valor da propriedade picmsufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20838,7 +20838,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade picmsInter.
+                     * Obtém o valor da propriedade picmsInter.
                      * 
                      * @return
                      *     possible object is
@@ -20862,7 +20862,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade picmsInterPart.
+                     * Obtém o valor da propriedade picmsInterPart.
                      * 
                      * @return
                      *     possible object is
@@ -20886,7 +20886,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vfcpufDest.
+                     * Obtém o valor da propriedade vfcpufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20910,7 +20910,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vicmsufDest.
+                     * Obtém o valor da propriedade vicmsufDest.
                      * 
                      * @return
                      *     possible object is
@@ -20934,7 +20934,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vicmsufRemet.
+                     * Obtém o valor da propriedade vicmsufRemet.
                      * 
                      * @return
                      *     possible object is
@@ -20963,7 +20963,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -21001,7 +21001,7 @@ public class TNFe {
                     protected String viof;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbc.
+                     * Obtém o valor da propriedade vbc.
                      * 
                      * @return
                      *     possible object is
@@ -21025,7 +21025,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vDespAdu.
+                     * Obtém o valor da propriedade vDespAdu.
                      * 
                      * @return
                      *     possible object is
@@ -21049,7 +21049,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vii.
+                     * Obtém o valor da propriedade vii.
                      * 
                      * @return
                      *     possible object is
@@ -21073,7 +21073,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade viof.
+                     * Obtém o valor da propriedade viof.
                      * 
                      * @return
                      *     possible object is
@@ -21102,7 +21102,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -21224,7 +21224,7 @@ public class TNFe {
                     protected String indIncentivo;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbc.
+                     * Obtém o valor da propriedade vbc.
                      * 
                      * @return
                      *     possible object is
@@ -21248,7 +21248,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vAliq.
+                     * Obtém o valor da propriedade vAliq.
                      * 
                      * @return
                      *     possible object is
@@ -21272,7 +21272,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vissqn.
+                     * Obtém o valor da propriedade vissqn.
                      * 
                      * @return
                      *     possible object is
@@ -21296,7 +21296,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cMunFG.
+                     * Obtém o valor da propriedade cMunFG.
                      * 
                      * @return
                      *     possible object is
@@ -21320,7 +21320,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cListServ.
+                     * Obtém o valor da propriedade cListServ.
                      * 
                      * @return
                      *     possible object is
@@ -21344,7 +21344,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vDeducao.
+                     * Obtém o valor da propriedade vDeducao.
                      * 
                      * @return
                      *     possible object is
@@ -21368,7 +21368,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vOutro.
+                     * Obtém o valor da propriedade vOutro.
                      * 
                      * @return
                      *     possible object is
@@ -21392,7 +21392,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vDescIncond.
+                     * Obtém o valor da propriedade vDescIncond.
                      * 
                      * @return
                      *     possible object is
@@ -21416,7 +21416,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vDescCond.
+                     * Obtém o valor da propriedade vDescCond.
                      * 
                      * @return
                      *     possible object is
@@ -21440,7 +21440,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vissRet.
+                     * Obtém o valor da propriedade vissRet.
                      * 
                      * @return
                      *     possible object is
@@ -21464,7 +21464,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade indISS.
+                     * Obtém o valor da propriedade indISS.
                      * 
                      * @return
                      *     possible object is
@@ -21488,7 +21488,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cServico.
+                     * Obtém o valor da propriedade cServico.
                      * 
                      * @return
                      *     possible object is
@@ -21512,7 +21512,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cMun.
+                     * Obtém o valor da propriedade cMun.
                      * 
                      * @return
                      *     possible object is
@@ -21536,7 +21536,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cPais.
+                     * Obtém o valor da propriedade cPais.
                      * 
                      * @return
                      *     possible object is
@@ -21560,7 +21560,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nProcesso.
+                     * Obtém o valor da propriedade nProcesso.
                      * 
                      * @return
                      *     possible object is
@@ -21584,7 +21584,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade indIncentivo.
+                     * Obtém o valor da propriedade indIncentivo.
                      * 
                      * @return
                      *     possible object is
@@ -21613,7 +21613,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -21765,7 +21765,7 @@ public class TNFe {
                     protected TNFe.InfNFe.Det.Imposto.PIS.PISOutr pisOutr;
 
                     /**
-                     * ObtÃ©m o valor da propriedade pisAliq.
+                     * Obtém o valor da propriedade pisAliq.
                      * 
                      * @return
                      *     possible object is
@@ -21789,7 +21789,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pisQtde.
+                     * Obtém o valor da propriedade pisQtde.
                      * 
                      * @return
                      *     possible object is
@@ -21813,7 +21813,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pisnt.
+                     * Obtém o valor da propriedade pisnt.
                      * 
                      * @return
                      *     possible object is
@@ -21837,7 +21837,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pisOutr.
+                     * Obtém o valor da propriedade pisOutr.
                      * 
                      * @return
                      *     possible object is
@@ -21864,7 +21864,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -21910,7 +21910,7 @@ public class TNFe {
                         protected String vpis;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -21934,7 +21934,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -21958,7 +21958,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade ppis.
+                         * Obtém o valor da propriedade ppis.
                          * 
                          * @return
                          *     possible object is
@@ -21982,7 +21982,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vpis.
+                         * Obtém o valor da propriedade vpis.
                          * 
                          * @return
                          *     possible object is
@@ -22011,7 +22011,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -22049,7 +22049,7 @@ public class TNFe {
                         protected String cst;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -22078,7 +22078,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -22159,7 +22159,7 @@ public class TNFe {
                         protected String vpis;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -22183,7 +22183,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vbc.
+                         * Obtém o valor da propriedade vbc.
                          * 
                          * @return
                          *     possible object is
@@ -22207,7 +22207,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade ppis.
+                         * Obtém o valor da propriedade ppis.
                          * 
                          * @return
                          *     possible object is
@@ -22231,7 +22231,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade qbcProd.
+                         * Obtém o valor da propriedade qbcProd.
                          * 
                          * @return
                          *     possible object is
@@ -22255,7 +22255,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vAliqProd.
+                         * Obtém o valor da propriedade vAliqProd.
                          * 
                          * @return
                          *     possible object is
@@ -22279,7 +22279,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vpis.
+                         * Obtém o valor da propriedade vpis.
                          * 
                          * @return
                          *     possible object is
@@ -22308,7 +22308,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -22353,7 +22353,7 @@ public class TNFe {
                         protected String vpis;
 
                         /**
-                         * ObtÃ©m o valor da propriedade cst.
+                         * Obtém o valor da propriedade cst.
                          * 
                          * @return
                          *     possible object is
@@ -22377,7 +22377,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade qbcProd.
+                         * Obtém o valor da propriedade qbcProd.
                          * 
                          * @return
                          *     possible object is
@@ -22401,7 +22401,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vAliqProd.
+                         * Obtém o valor da propriedade vAliqProd.
                          * 
                          * @return
                          *     possible object is
@@ -22425,7 +22425,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vpis.
+                         * Obtém o valor da propriedade vpis.
                          * 
                          * @return
                          *     possible object is
@@ -22456,7 +22456,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -22503,7 +22503,7 @@ public class TNFe {
                     protected String vpis;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vbc.
+                     * Obtém o valor da propriedade vbc.
                      * 
                      * @return
                      *     possible object is
@@ -22527,7 +22527,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ppis.
+                     * Obtém o valor da propriedade ppis.
                      * 
                      * @return
                      *     possible object is
@@ -22551,7 +22551,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade qbcProd.
+                     * Obtém o valor da propriedade qbcProd.
                      * 
                      * @return
                      *     possible object is
@@ -22575,7 +22575,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vAliqProd.
+                     * Obtém o valor da propriedade vAliqProd.
                      * 
                      * @return
                      *     possible object is
@@ -22599,7 +22599,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vpis.
+                     * Obtém o valor da propriedade vpis.
                      * 
                      * @return
                      *     possible object is
@@ -22630,7 +22630,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -22670,7 +22670,7 @@ public class TNFe {
                 protected TNFe.InfNFe.Det.ImpostoDevol.IPI ipi;
 
                 /**
-                 * ObtÃ©m o valor da propriedade pDevol.
+                 * Obtém o valor da propriedade pDevol.
                  * 
                  * @return
                  *     possible object is
@@ -22694,7 +22694,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade ipi.
+                 * Obtém o valor da propriedade ipi.
                  * 
                  * @return
                  *     possible object is
@@ -22721,7 +22721,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -22747,7 +22747,7 @@ public class TNFe {
                     protected String vipiDevol;
 
                     /**
-                     * ObtÃ©m o valor da propriedade vipiDevol.
+                     * Obtém o valor da propriedade vipiDevol.
                      * 
                      * @return
                      *     possible object is
@@ -22778,7 +22778,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -23589,7 +23589,7 @@ public class TNFe {
                 protected String nrecopi;
 
                 /**
-                 * ObtÃ©m o valor da propriedade cProd.
+                 * Obtém o valor da propriedade cProd.
                  * 
                  * @return
                  *     possible object is
@@ -23613,7 +23613,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cean.
+                 * Obtém o valor da propriedade cean.
                  * 
                  * @return
                  *     possible object is
@@ -23637,7 +23637,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xProd.
+                 * Obtém o valor da propriedade xProd.
                  * 
                  * @return
                  *     possible object is
@@ -23661,7 +23661,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade ncm.
+                 * Obtém o valor da propriedade ncm.
                  * 
                  * @return
                  *     possible object is
@@ -23714,7 +23714,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cest.
+                 * Obtém o valor da propriedade cest.
                  * 
                  * @return
                  *     possible object is
@@ -23738,7 +23738,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade indEscala.
+                 * Obtém o valor da propriedade indEscala.
                  * 
                  * @return
                  *     possible object is
@@ -23762,7 +23762,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cnpjFab.
+                 * Obtém o valor da propriedade cnpjFab.
                  * 
                  * @return
                  *     possible object is
@@ -23786,7 +23786,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cBenef.
+                 * Obtém o valor da propriedade cBenef.
                  * 
                  * @return
                  *     possible object is
@@ -23810,7 +23810,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade extipi.
+                 * Obtém o valor da propriedade extipi.
                  * 
                  * @return
                  *     possible object is
@@ -23834,7 +23834,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cfop.
+                 * Obtém o valor da propriedade cfop.
                  * 
                  * @return
                  *     possible object is
@@ -23858,7 +23858,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade uCom.
+                 * Obtém o valor da propriedade uCom.
                  * 
                  * @return
                  *     possible object is
@@ -23882,7 +23882,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade qCom.
+                 * Obtém o valor da propriedade qCom.
                  * 
                  * @return
                  *     possible object is
@@ -23906,7 +23906,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vUnCom.
+                 * Obtém o valor da propriedade vUnCom.
                  * 
                  * @return
                  *     possible object is
@@ -23930,7 +23930,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vProd.
+                 * Obtém o valor da propriedade vProd.
                  * 
                  * @return
                  *     possible object is
@@ -23954,7 +23954,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade ceanTrib.
+                 * Obtém o valor da propriedade ceanTrib.
                  * 
                  * @return
                  *     possible object is
@@ -23978,7 +23978,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade uTrib.
+                 * Obtém o valor da propriedade uTrib.
                  * 
                  * @return
                  *     possible object is
@@ -24002,7 +24002,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade qTrib.
+                 * Obtém o valor da propriedade qTrib.
                  * 
                  * @return
                  *     possible object is
@@ -24026,7 +24026,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vUnTrib.
+                 * Obtém o valor da propriedade vUnTrib.
                  * 
                  * @return
                  *     possible object is
@@ -24050,7 +24050,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vFrete.
+                 * Obtém o valor da propriedade vFrete.
                  * 
                  * @return
                  *     possible object is
@@ -24074,7 +24074,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vSeg.
+                 * Obtém o valor da propriedade vSeg.
                  * 
                  * @return
                  *     possible object is
@@ -24098,7 +24098,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDesc.
+                 * Obtém o valor da propriedade vDesc.
                  * 
                  * @return
                  *     possible object is
@@ -24122,7 +24122,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vOutro.
+                 * Obtém o valor da propriedade vOutro.
                  * 
                  * @return
                  *     possible object is
@@ -24146,7 +24146,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade indTot.
+                 * Obtém o valor da propriedade indTot.
                  * 
                  * @return
                  *     possible object is
@@ -24228,7 +24228,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xPed.
+                 * Obtém o valor da propriedade xPed.
                  * 
                  * @return
                  *     possible object is
@@ -24252,7 +24252,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade nItemPed.
+                 * Obtém o valor da propriedade nItemPed.
                  * 
                  * @return
                  *     possible object is
@@ -24276,7 +24276,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade nfci.
+                 * Obtém o valor da propriedade nfci.
                  * 
                  * @return
                  *     possible object is
@@ -24329,7 +24329,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade veicProd.
+                 * Obtém o valor da propriedade veicProd.
                  * 
                  * @return
                  *     possible object is
@@ -24353,7 +24353,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade med.
+                 * Obtém o valor da propriedade med.
                  * 
                  * @return
                  *     possible object is
@@ -24406,7 +24406,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade comb.
+                 * Obtém o valor da propriedade comb.
                  * 
                  * @return
                  *     possible object is
@@ -24430,7 +24430,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade nrecopi.
+                 * Obtém o valor da propriedade nrecopi.
                  * 
                  * @return
                  *     possible object is
@@ -24457,7 +24457,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -24524,7 +24524,7 @@ public class TNFe {
                     protected String descr;
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpArma.
+                     * Obtém o valor da propriedade tpArma.
                      * 
                      * @return
                      *     possible object is
@@ -24548,7 +24548,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nSerie.
+                     * Obtém o valor da propriedade nSerie.
                      * 
                      * @return
                      *     possible object is
@@ -24572,7 +24572,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nCano.
+                     * Obtém o valor da propriedade nCano.
                      * 
                      * @return
                      *     possible object is
@@ -24596,7 +24596,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade descr.
+                     * Obtém o valor da propriedade descr.
                      * 
                      * @return
                      *     possible object is
@@ -24625,7 +24625,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -24757,7 +24757,7 @@ public class TNFe {
                     protected TNFe.InfNFe.Det.Prod.Comb.Encerrante encerrante;
 
                     /**
-                     * ObtÃ©m o valor da propriedade cProdANP.
+                     * Obtém o valor da propriedade cProdANP.
                      * 
                      * @return
                      *     possible object is
@@ -24781,7 +24781,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade descANP.
+                     * Obtém o valor da propriedade descANP.
                      * 
                      * @return
                      *     possible object is
@@ -24805,7 +24805,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pglp.
+                     * Obtém o valor da propriedade pglp.
                      * 
                      * @return
                      *     possible object is
@@ -24829,7 +24829,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pgNn.
+                     * Obtém o valor da propriedade pgNn.
                      * 
                      * @return
                      *     possible object is
@@ -24853,7 +24853,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pgNi.
+                     * Obtém o valor da propriedade pgNi.
                      * 
                      * @return
                      *     possible object is
@@ -24877,7 +24877,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vPart.
+                     * Obtém o valor da propriedade vPart.
                      * 
                      * @return
                      *     possible object is
@@ -24901,7 +24901,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade codif.
+                     * Obtém o valor da propriedade codif.
                      * 
                      * @return
                      *     possible object is
@@ -24925,7 +24925,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade qTemp.
+                     * Obtém o valor da propriedade qTemp.
                      * 
                      * @return
                      *     possible object is
@@ -24949,7 +24949,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ufCons.
+                     * Obtém o valor da propriedade ufCons.
                      * 
                      * @return
                      *     possible object is
@@ -24973,7 +24973,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cide.
+                     * Obtém o valor da propriedade cide.
                      * 
                      * @return
                      *     possible object is
@@ -24997,7 +24997,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade encerrante.
+                     * Obtém o valor da propriedade encerrante.
                      * 
                      * @return
                      *     possible object is
@@ -25024,7 +25024,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -25058,7 +25058,7 @@ public class TNFe {
                         protected String vcide;
 
                         /**
-                         * ObtÃ©m o valor da propriedade qbcProd.
+                         * Obtém o valor da propriedade qbcProd.
                          * 
                          * @return
                          *     possible object is
@@ -25082,7 +25082,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vAliqProd.
+                         * Obtém o valor da propriedade vAliqProd.
                          * 
                          * @return
                          *     possible object is
@@ -25106,7 +25106,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vcide.
+                         * Obtém o valor da propriedade vcide.
                          * 
                          * @return
                          *     possible object is
@@ -25135,7 +25135,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -25197,7 +25197,7 @@ public class TNFe {
                         protected String vEncFin;
 
                         /**
-                         * ObtÃ©m o valor da propriedade nBico.
+                         * Obtém o valor da propriedade nBico.
                          * 
                          * @return
                          *     possible object is
@@ -25221,7 +25221,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade nBomba.
+                         * Obtém o valor da propriedade nBomba.
                          * 
                          * @return
                          *     possible object is
@@ -25245,7 +25245,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade nTanque.
+                         * Obtém o valor da propriedade nTanque.
                          * 
                          * @return
                          *     possible object is
@@ -25269,7 +25269,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vEncIni.
+                         * Obtém o valor da propriedade vEncIni.
                          * 
                          * @return
                          *     possible object is
@@ -25293,7 +25293,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vEncFin.
+                         * Obtém o valor da propriedade vEncFin.
                          * 
                          * @return
                          *     possible object is
@@ -25324,7 +25324,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -25486,7 +25486,7 @@ public class TNFe {
                     protected List<TNFe.InfNFe.Det.Prod.DI.Adi> adi;
 
                     /**
-                     * ObtÃ©m o valor da propriedade ndi.
+                     * Obtém o valor da propriedade ndi.
                      * 
                      * @return
                      *     possible object is
@@ -25510,7 +25510,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ddi.
+                     * Obtém o valor da propriedade ddi.
                      * 
                      * @return
                      *     possible object is
@@ -25534,7 +25534,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade xLocDesemb.
+                     * Obtém o valor da propriedade xLocDesemb.
                      * 
                      * @return
                      *     possible object is
@@ -25558,7 +25558,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ufDesemb.
+                     * Obtém o valor da propriedade ufDesemb.
                      * 
                      * @return
                      *     possible object is
@@ -25582,7 +25582,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade dDesemb.
+                     * Obtém o valor da propriedade dDesemb.
                      * 
                      * @return
                      *     possible object is
@@ -25606,7 +25606,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpViaTransp.
+                     * Obtém o valor da propriedade tpViaTransp.
                      * 
                      * @return
                      *     possible object is
@@ -25630,7 +25630,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vafrmm.
+                     * Obtém o valor da propriedade vafrmm.
                      * 
                      * @return
                      *     possible object is
@@ -25654,7 +25654,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpIntermedio.
+                     * Obtém o valor da propriedade tpIntermedio.
                      * 
                      * @return
                      *     possible object is
@@ -25678,7 +25678,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cnpj.
+                     * Obtém o valor da propriedade cnpj.
                      * 
                      * @return
                      *     possible object is
@@ -25702,7 +25702,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ufTerceiro.
+                     * Obtém o valor da propriedade ufTerceiro.
                      * 
                      * @return
                      *     possible object is
@@ -25726,7 +25726,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cExportador.
+                     * Obtém o valor da propriedade cExportador.
                      * 
                      * @return
                      *     possible object is
@@ -25782,7 +25782,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -25850,7 +25850,7 @@ public class TNFe {
                         protected String nDraw;
 
                         /**
-                         * ObtÃ©m o valor da propriedade nAdicao.
+                         * Obtém o valor da propriedade nAdicao.
                          * 
                          * @return
                          *     possible object is
@@ -25874,7 +25874,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade nSeqAdic.
+                         * Obtém o valor da propriedade nSeqAdic.
                          * 
                          * @return
                          *     possible object is
@@ -25898,7 +25898,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade cFabricante.
+                         * Obtém o valor da propriedade cFabricante.
                          * 
                          * @return
                          *     possible object is
@@ -25922,7 +25922,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade vDescDI.
+                         * Obtém o valor da propriedade vDescDI.
                          * 
                          * @return
                          *     possible object is
@@ -25946,7 +25946,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade nDraw.
+                         * Obtém o valor da propriedade nDraw.
                          * 
                          * @return
                          *     possible object is
@@ -25977,7 +25977,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -26031,7 +26031,7 @@ public class TNFe {
                     protected TNFe.InfNFe.Det.Prod.DetExport.ExportInd exportInd;
 
                     /**
-                     * ObtÃ©m o valor da propriedade nDraw.
+                     * Obtém o valor da propriedade nDraw.
                      * 
                      * @return
                      *     possible object is
@@ -26055,7 +26055,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade exportInd.
+                     * Obtém o valor da propriedade exportInd.
                      * 
                      * @return
                      *     possible object is
@@ -26082,7 +26082,7 @@ public class TNFe {
                     /**
                      * <p>Classe Java de anonymous complex type.
                      * 
-                     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                      * 
                      * <pre>
                      * &lt;complexType>
@@ -26123,7 +26123,7 @@ public class TNFe {
                         protected String qExport;
 
                         /**
-                         * ObtÃ©m o valor da propriedade nre.
+                         * Obtém o valor da propriedade nre.
                          * 
                          * @return
                          *     possible object is
@@ -26147,7 +26147,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade chNFe.
+                         * Obtém o valor da propriedade chNFe.
                          * 
                          * @return
                          *     possible object is
@@ -26171,7 +26171,7 @@ public class TNFe {
                         }
 
                         /**
-                         * ObtÃ©m o valor da propriedade qExport.
+                         * Obtém o valor da propriedade qExport.
                          * 
                          * @return
                          *     possible object is
@@ -26202,7 +26202,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -26238,7 +26238,7 @@ public class TNFe {
                     protected String vpmc;
 
                     /**
-                     * ObtÃ©m o valor da propriedade cProdANVISA.
+                     * Obtém o valor da propriedade cProdANVISA.
                      * 
                      * @return
                      *     possible object is
@@ -26262,7 +26262,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vpmc.
+                     * Obtém o valor da propriedade vpmc.
                      * 
                      * @return
                      *     possible object is
@@ -26291,7 +26291,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -26346,7 +26346,7 @@ public class TNFe {
                     protected String cAgreg;
 
                     /**
-                     * ObtÃ©m o valor da propriedade nLote.
+                     * Obtém o valor da propriedade nLote.
                      * 
                      * @return
                      *     possible object is
@@ -26370,7 +26370,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade qLote.
+                     * Obtém o valor da propriedade qLote.
                      * 
                      * @return
                      *     possible object is
@@ -26394,7 +26394,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade dFab.
+                     * Obtém o valor da propriedade dFab.
                      * 
                      * @return
                      *     possible object is
@@ -26418,7 +26418,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade dVal.
+                     * Obtém o valor da propriedade dVal.
                      * 
                      * @return
                      *     possible object is
@@ -26442,7 +26442,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cAgreg.
+                     * Obtém o valor da propriedade cAgreg.
                      * 
                      * @return
                      *     possible object is
@@ -26471,7 +26471,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -26772,7 +26772,7 @@ public class TNFe {
                     protected String tpRest;
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpOp.
+                     * Obtém o valor da propriedade tpOp.
                      * 
                      * @return
                      *     possible object is
@@ -26796,7 +26796,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade chassi.
+                     * Obtém o valor da propriedade chassi.
                      * 
                      * @return
                      *     possible object is
@@ -26820,7 +26820,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cCor.
+                     * Obtém o valor da propriedade cCor.
                      * 
                      * @return
                      *     possible object is
@@ -26844,7 +26844,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade xCor.
+                     * Obtém o valor da propriedade xCor.
                      * 
                      * @return
                      *     possible object is
@@ -26868,7 +26868,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pot.
+                     * Obtém o valor da propriedade pot.
                      * 
                      * @return
                      *     possible object is
@@ -26892,7 +26892,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cilin.
+                     * Obtém o valor da propriedade cilin.
                      * 
                      * @return
                      *     possible object is
@@ -26916,7 +26916,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pesoL.
+                     * Obtém o valor da propriedade pesoL.
                      * 
                      * @return
                      *     possible object is
@@ -26940,7 +26940,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade pesoB.
+                     * Obtém o valor da propriedade pesoB.
                      * 
                      * @return
                      *     possible object is
@@ -26964,7 +26964,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nSerie.
+                     * Obtém o valor da propriedade nSerie.
                      * 
                      * @return
                      *     possible object is
@@ -26988,7 +26988,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpComb.
+                     * Obtém o valor da propriedade tpComb.
                      * 
                      * @return
                      *     possible object is
@@ -27012,7 +27012,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nMotor.
+                     * Obtém o valor da propriedade nMotor.
                      * 
                      * @return
                      *     possible object is
@@ -27036,7 +27036,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cmt.
+                     * Obtém o valor da propriedade cmt.
                      * 
                      * @return
                      *     possible object is
@@ -27060,7 +27060,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade dist.
+                     * Obtém o valor da propriedade dist.
                      * 
                      * @return
                      *     possible object is
@@ -27084,7 +27084,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade anoMod.
+                     * Obtém o valor da propriedade anoMod.
                      * 
                      * @return
                      *     possible object is
@@ -27108,7 +27108,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade anoFab.
+                     * Obtém o valor da propriedade anoFab.
                      * 
                      * @return
                      *     possible object is
@@ -27132,7 +27132,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpPint.
+                     * Obtém o valor da propriedade tpPint.
                      * 
                      * @return
                      *     possible object is
@@ -27156,7 +27156,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpVeic.
+                     * Obtém o valor da propriedade tpVeic.
                      * 
                      * @return
                      *     possible object is
@@ -27180,7 +27180,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade espVeic.
+                     * Obtém o valor da propriedade espVeic.
                      * 
                      * @return
                      *     possible object is
@@ -27204,7 +27204,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade vin.
+                     * Obtém o valor da propriedade vin.
                      * 
                      * @return
                      *     possible object is
@@ -27228,7 +27228,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade condVeic.
+                     * Obtém o valor da propriedade condVeic.
                      * 
                      * @return
                      *     possible object is
@@ -27252,7 +27252,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cMod.
+                     * Obtém o valor da propriedade cMod.
                      * 
                      * @return
                      *     possible object is
@@ -27276,7 +27276,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cCorDENATRAN.
+                     * Obtém o valor da propriedade cCorDENATRAN.
                      * 
                      * @return
                      *     possible object is
@@ -27300,7 +27300,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade lota.
+                     * Obtém o valor da propriedade lota.
                      * 
                      * @return
                      *     possible object is
@@ -27324,7 +27324,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpRest.
+                     * Obtém o valor da propriedade tpRest.
                      * 
                      * @return
                      *     possible object is
@@ -27357,7 +27357,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -27459,7 +27459,7 @@ public class TNFe {
             protected String crt;
 
             /**
-             * ObtÃ©m o valor da propriedade cnpj.
+             * Obtém o valor da propriedade cnpj.
              * 
              * @return
              *     possible object is
@@ -27483,7 +27483,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cpf.
+             * Obtém o valor da propriedade cpf.
              * 
              * @return
              *     possible object is
@@ -27507,7 +27507,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xNome.
+             * Obtém o valor da propriedade xNome.
              * 
              * @return
              *     possible object is
@@ -27531,7 +27531,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xFant.
+             * Obtém o valor da propriedade xFant.
              * 
              * @return
              *     possible object is
@@ -27555,7 +27555,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade enderEmit.
+             * Obtém o valor da propriedade enderEmit.
              * 
              * @return
              *     possible object is
@@ -27579,7 +27579,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade ie.
+             * Obtém o valor da propriedade ie.
              * 
              * @return
              *     possible object is
@@ -27603,7 +27603,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade iest.
+             * Obtém o valor da propriedade iest.
              * 
              * @return
              *     possible object is
@@ -27627,7 +27627,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade im.
+             * Obtém o valor da propriedade im.
              * 
              * @return
              *     possible object is
@@ -27651,7 +27651,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cnae.
+             * Obtém o valor da propriedade cnae.
              * 
              * @return
              *     possible object is
@@ -27675,7 +27675,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade crt.
+             * Obtém o valor da propriedade crt.
              * 
              * @return
              *     possible object is
@@ -27704,7 +27704,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -27752,7 +27752,7 @@ public class TNFe {
             protected String xLocDespacho;
 
             /**
-             * ObtÃ©m o valor da propriedade ufSaidaPais.
+             * Obtém o valor da propriedade ufSaidaPais.
              * 
              * @return
              *     possible object is
@@ -27776,7 +27776,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xLocExporta.
+             * Obtém o valor da propriedade xLocExporta.
              * 
              * @return
              *     possible object is
@@ -27800,7 +27800,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xLocDespacho.
+             * Obtém o valor da propriedade xLocDespacho.
              * 
              * @return
              *     possible object is
@@ -27829,7 +27829,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -28154,7 +28154,7 @@ public class TNFe {
             protected List<TNFe.InfNFe.Ide.NFref> nFref;
 
             /**
-             * ObtÃ©m o valor da propriedade cuf.
+             * Obtém o valor da propriedade cuf.
              * 
              * @return
              *     possible object is
@@ -28178,7 +28178,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cnf.
+             * Obtém o valor da propriedade cnf.
              * 
              * @return
              *     possible object is
@@ -28202,7 +28202,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade natOp.
+             * Obtém o valor da propriedade natOp.
              * 
              * @return
              *     possible object is
@@ -28226,7 +28226,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade mod.
+             * Obtém o valor da propriedade mod.
              * 
              * @return
              *     possible object is
@@ -28250,7 +28250,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade serie.
+             * Obtém o valor da propriedade serie.
              * 
              * @return
              *     possible object is
@@ -28274,7 +28274,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade nnf.
+             * Obtém o valor da propriedade nnf.
              * 
              * @return
              *     possible object is
@@ -28298,7 +28298,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade dhEmi.
+             * Obtém o valor da propriedade dhEmi.
              * 
              * @return
              *     possible object is
@@ -28322,7 +28322,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade dhSaiEnt.
+             * Obtém o valor da propriedade dhSaiEnt.
              * 
              * @return
              *     possible object is
@@ -28346,7 +28346,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade tpNF.
+             * Obtém o valor da propriedade tpNF.
              * 
              * @return
              *     possible object is
@@ -28370,7 +28370,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade idDest.
+             * Obtém o valor da propriedade idDest.
              * 
              * @return
              *     possible object is
@@ -28394,7 +28394,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cMunFG.
+             * Obtém o valor da propriedade cMunFG.
              * 
              * @return
              *     possible object is
@@ -28418,7 +28418,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade tpImp.
+             * Obtém o valor da propriedade tpImp.
              * 
              * @return
              *     possible object is
@@ -28442,7 +28442,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade tpEmis.
+             * Obtém o valor da propriedade tpEmis.
              * 
              * @return
              *     possible object is
@@ -28466,7 +28466,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade cdv.
+             * Obtém o valor da propriedade cdv.
              * 
              * @return
              *     possible object is
@@ -28490,7 +28490,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade tpAmb.
+             * Obtém o valor da propriedade tpAmb.
              * 
              * @return
              *     possible object is
@@ -28514,7 +28514,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade finNFe.
+             * Obtém o valor da propriedade finNFe.
              * 
              * @return
              *     possible object is
@@ -28538,7 +28538,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade indFinal.
+             * Obtém o valor da propriedade indFinal.
              * 
              * @return
              *     possible object is
@@ -28562,7 +28562,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade indPres.
+             * Obtém o valor da propriedade indPres.
              * 
              * @return
              *     possible object is
@@ -28586,7 +28586,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade procEmi.
+             * Obtém o valor da propriedade procEmi.
              * 
              * @return
              *     possible object is
@@ -28610,7 +28610,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade verProc.
+             * Obtém o valor da propriedade verProc.
              * 
              * @return
              *     possible object is
@@ -28634,7 +28634,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade dhCont.
+             * Obtém o valor da propriedade dhCont.
              * 
              * @return
              *     possible object is
@@ -28658,7 +28658,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade xJust.
+             * Obtém o valor da propriedade xJust.
              * 
              * @return
              *     possible object is
@@ -28714,7 +28714,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -28850,7 +28850,7 @@ public class TNFe {
                 protected TNFe.InfNFe.Ide.NFref.RefECF refECF;
 
                 /**
-                 * ObtÃ©m o valor da propriedade refNFe.
+                 * Obtém o valor da propriedade refNFe.
                  * 
                  * @return
                  *     possible object is
@@ -28874,7 +28874,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade refNF.
+                 * Obtém o valor da propriedade refNF.
                  * 
                  * @return
                  *     possible object is
@@ -28898,7 +28898,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade refNFP.
+                 * Obtém o valor da propriedade refNFP.
                  * 
                  * @return
                  *     possible object is
@@ -28922,7 +28922,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade refCTe.
+                 * Obtém o valor da propriedade refCTe.
                  * 
                  * @return
                  *     possible object is
@@ -28946,7 +28946,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade refECF.
+                 * Obtém o valor da propriedade refECF.
                  * 
                  * @return
                  *     possible object is
@@ -28973,7 +28973,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -29030,7 +29030,7 @@ public class TNFe {
                     protected String ncoo;
 
                     /**
-                     * ObtÃ©m o valor da propriedade mod.
+                     * Obtém o valor da propriedade mod.
                      * 
                      * @return
                      *     possible object is
@@ -29054,7 +29054,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade necf.
+                     * Obtém o valor da propriedade necf.
                      * 
                      * @return
                      *     possible object is
@@ -29078,7 +29078,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ncoo.
+                     * Obtém o valor da propriedade ncoo.
                      * 
                      * @return
                      *     possible object is
@@ -29107,7 +29107,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -29168,7 +29168,7 @@ public class TNFe {
                     protected String nnf;
 
                     /**
-                     * ObtÃ©m o valor da propriedade cuf.
+                     * Obtém o valor da propriedade cuf.
                      * 
                      * @return
                      *     possible object is
@@ -29192,7 +29192,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade aamm.
+                     * Obtém o valor da propriedade aamm.
                      * 
                      * @return
                      *     possible object is
@@ -29216,7 +29216,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cnpj.
+                     * Obtém o valor da propriedade cnpj.
                      * 
                      * @return
                      *     possible object is
@@ -29240,7 +29240,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade mod.
+                     * Obtém o valor da propriedade mod.
                      * 
                      * @return
                      *     possible object is
@@ -29264,7 +29264,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade serie.
+                     * Obtém o valor da propriedade serie.
                      * 
                      * @return
                      *     possible object is
@@ -29288,7 +29288,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nnf.
+                     * Obtém o valor da propriedade nnf.
                      * 
                      * @return
                      *     possible object is
@@ -29317,7 +29317,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -29388,7 +29388,7 @@ public class TNFe {
                     protected String nnf;
 
                     /**
-                     * ObtÃ©m o valor da propriedade cuf.
+                     * Obtém o valor da propriedade cuf.
                      * 
                      * @return
                      *     possible object is
@@ -29412,7 +29412,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade aamm.
+                     * Obtém o valor da propriedade aamm.
                      * 
                      * @return
                      *     possible object is
@@ -29436,7 +29436,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cnpj.
+                     * Obtém o valor da propriedade cnpj.
                      * 
                      * @return
                      *     possible object is
@@ -29460,7 +29460,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cpf.
+                     * Obtém o valor da propriedade cpf.
                      * 
                      * @return
                      *     possible object is
@@ -29484,7 +29484,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade ie.
+                     * Obtém o valor da propriedade ie.
                      * 
                      * @return
                      *     possible object is
@@ -29508,7 +29508,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade mod.
+                     * Obtém o valor da propriedade mod.
                      * 
                      * @return
                      *     possible object is
@@ -29532,7 +29532,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade serie.
+                     * Obtém o valor da propriedade serie.
                      * 
                      * @return
                      *     possible object is
@@ -29556,7 +29556,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade nnf.
+                     * Obtém o valor da propriedade nnf.
                      * 
                      * @return
                      *     possible object is
@@ -29589,7 +29589,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -29719,7 +29719,7 @@ public class TNFe {
             protected List<TNFe.InfNFe.InfAdic.ProcRef> procRef;
 
             /**
-             * ObtÃ©m o valor da propriedade infAdFisco.
+             * Obtém o valor da propriedade infAdFisco.
              * 
              * @return
              *     possible object is
@@ -29743,7 +29743,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade infCpl.
+             * Obtém o valor da propriedade infCpl.
              * 
              * @return
              *     possible object is
@@ -29857,7 +29857,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -29900,7 +29900,7 @@ public class TNFe {
                 protected String xCampo;
 
                 /**
-                 * ObtÃ©m o valor da propriedade xTexto.
+                 * Obtém o valor da propriedade xTexto.
                  * 
                  * @return
                  *     possible object is
@@ -29924,7 +29924,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xCampo.
+                 * Obtém o valor da propriedade xCampo.
                  * 
                  * @return
                  *     possible object is
@@ -29953,7 +29953,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -29996,7 +29996,7 @@ public class TNFe {
                 protected String xCampo;
 
                 /**
-                 * ObtÃ©m o valor da propriedade xTexto.
+                 * Obtém o valor da propriedade xTexto.
                  * 
                  * @return
                  *     possible object is
@@ -30020,7 +30020,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xCampo.
+                 * Obtém o valor da propriedade xCampo.
                  * 
                  * @return
                  *     possible object is
@@ -30049,7 +30049,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -30097,7 +30097,7 @@ public class TNFe {
                 protected String indProc;
 
                 /**
-                 * ObtÃ©m o valor da propriedade nProc.
+                 * Obtém o valor da propriedade nProc.
                  * 
                  * @return
                  *     possible object is
@@ -30121,7 +30121,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade indProc.
+                 * Obtém o valor da propriedade indProc.
                  * 
                  * @return
                  *     possible object is
@@ -30152,7 +30152,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -30285,7 +30285,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vTroco.
+             * Obtém o valor da propriedade vTroco.
              * 
              * @return
              *     possible object is
@@ -30312,7 +30312,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -30408,7 +30408,7 @@ public class TNFe {
                 protected TNFe.InfNFe.Pag.DetPag.Card card;
 
                 /**
-                 * ObtÃ©m o valor da propriedade tPag.
+                 * Obtém o valor da propriedade tPag.
                  * 
                  * @return
                  *     possible object is
@@ -30432,7 +30432,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vPag.
+                 * Obtém o valor da propriedade vPag.
                  * 
                  * @return
                  *     possible object is
@@ -30456,7 +30456,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade card.
+                 * Obtém o valor da propriedade card.
                  * 
                  * @return
                  *     possible object is
@@ -30483,7 +30483,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -30550,7 +30550,7 @@ public class TNFe {
                     protected String cAut;
 
                     /**
-                     * ObtÃ©m o valor da propriedade tpIntegra.
+                     * Obtém o valor da propriedade tpIntegra.
                      * 
                      * @return
                      *     possible object is
@@ -30574,7 +30574,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cnpj.
+                     * Obtém o valor da propriedade cnpj.
                      * 
                      * @return
                      *     possible object is
@@ -30598,7 +30598,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade tBand.
+                     * Obtém o valor da propriedade tBand.
                      * 
                      * @return
                      *     possible object is
@@ -30622,7 +30622,7 @@ public class TNFe {
                     }
 
                     /**
-                     * ObtÃ©m o valor da propriedade cAut.
+                     * Obtém o valor da propriedade cAut.
                      * 
                      * @return
                      *     possible object is
@@ -30655,7 +30655,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -30769,7 +30769,7 @@ public class TNFe {
             protected TNFe.InfNFe.Total.RetTrib retTrib;
 
             /**
-             * ObtÃ©m o valor da propriedade icmsTot.
+             * Obtém o valor da propriedade icmsTot.
              * 
              * @return
              *     possible object is
@@ -30793,7 +30793,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade issqNtot.
+             * Obtém o valor da propriedade issqNtot.
              * 
              * @return
              *     possible object is
@@ -30817,7 +30817,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade retTrib.
+             * Obtém o valor da propriedade retTrib.
              * 
              * @return
              *     possible object is
@@ -30844,7 +30844,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -30957,7 +30957,7 @@ public class TNFe {
                 protected String vTotTrib;
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbc.
+                 * Obtém o valor da propriedade vbc.
                  * 
                  * @return
                  *     possible object is
@@ -30981,7 +30981,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vicms.
+                 * Obtém o valor da propriedade vicms.
                  * 
                  * @return
                  *     possible object is
@@ -31005,7 +31005,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vicmsDeson.
+                 * Obtém o valor da propriedade vicmsDeson.
                  * 
                  * @return
                  *     possible object is
@@ -31029,7 +31029,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vfcpufDest.
+                 * Obtém o valor da propriedade vfcpufDest.
                  * 
                  * @return
                  *     possible object is
@@ -31053,7 +31053,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vicmsufDest.
+                 * Obtém o valor da propriedade vicmsufDest.
                  * 
                  * @return
                  *     possible object is
@@ -31077,7 +31077,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vicmsufRemet.
+                 * Obtém o valor da propriedade vicmsufRemet.
                  * 
                  * @return
                  *     possible object is
@@ -31101,7 +31101,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vfcp.
+                 * Obtém o valor da propriedade vfcp.
                  * 
                  * @return
                  *     possible object is
@@ -31125,7 +31125,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbcst.
+                 * Obtém o valor da propriedade vbcst.
                  * 
                  * @return
                  *     possible object is
@@ -31149,7 +31149,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vst.
+                 * Obtém o valor da propriedade vst.
                  * 
                  * @return
                  *     possible object is
@@ -31173,7 +31173,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vfcpst.
+                 * Obtém o valor da propriedade vfcpst.
                  * 
                  * @return
                  *     possible object is
@@ -31197,7 +31197,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vfcpstRet.
+                 * Obtém o valor da propriedade vfcpstRet.
                  * 
                  * @return
                  *     possible object is
@@ -31221,7 +31221,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vProd.
+                 * Obtém o valor da propriedade vProd.
                  * 
                  * @return
                  *     possible object is
@@ -31245,7 +31245,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vFrete.
+                 * Obtém o valor da propriedade vFrete.
                  * 
                  * @return
                  *     possible object is
@@ -31269,7 +31269,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vSeg.
+                 * Obtém o valor da propriedade vSeg.
                  * 
                  * @return
                  *     possible object is
@@ -31293,7 +31293,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDesc.
+                 * Obtém o valor da propriedade vDesc.
                  * 
                  * @return
                  *     possible object is
@@ -31317,7 +31317,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vii.
+                 * Obtém o valor da propriedade vii.
                  * 
                  * @return
                  *     possible object is
@@ -31341,7 +31341,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vipi.
+                 * Obtém o valor da propriedade vipi.
                  * 
                  * @return
                  *     possible object is
@@ -31365,7 +31365,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vipiDevol.
+                 * Obtém o valor da propriedade vipiDevol.
                  * 
                  * @return
                  *     possible object is
@@ -31389,7 +31389,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vpis.
+                 * Obtém o valor da propriedade vpis.
                  * 
                  * @return
                  *     possible object is
@@ -31413,7 +31413,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vcofins.
+                 * Obtém o valor da propriedade vcofins.
                  * 
                  * @return
                  *     possible object is
@@ -31437,7 +31437,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vOutro.
+                 * Obtém o valor da propriedade vOutro.
                  * 
                  * @return
                  *     possible object is
@@ -31461,7 +31461,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vnf.
+                 * Obtém o valor da propriedade vnf.
                  * 
                  * @return
                  *     possible object is
@@ -31485,7 +31485,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vTotTrib.
+                 * Obtém o valor da propriedade vTotTrib.
                  * 
                  * @return
                  *     possible object is
@@ -31514,7 +31514,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -31590,7 +31590,7 @@ public class TNFe {
                 protected String cRegTrib;
 
                 /**
-                 * ObtÃ©m o valor da propriedade vServ.
+                 * Obtém o valor da propriedade vServ.
                  * 
                  * @return
                  *     possible object is
@@ -31614,7 +31614,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbc.
+                 * Obtém o valor da propriedade vbc.
                  * 
                  * @return
                  *     possible object is
@@ -31638,7 +31638,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade viss.
+                 * Obtém o valor da propriedade viss.
                  * 
                  * @return
                  *     possible object is
@@ -31662,7 +31662,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vpis.
+                 * Obtém o valor da propriedade vpis.
                  * 
                  * @return
                  *     possible object is
@@ -31686,7 +31686,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vcofins.
+                 * Obtém o valor da propriedade vcofins.
                  * 
                  * @return
                  *     possible object is
@@ -31710,7 +31710,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade dCompet.
+                 * Obtém o valor da propriedade dCompet.
                  * 
                  * @return
                  *     possible object is
@@ -31734,7 +31734,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDeducao.
+                 * Obtém o valor da propriedade vDeducao.
                  * 
                  * @return
                  *     possible object is
@@ -31758,7 +31758,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vOutro.
+                 * Obtém o valor da propriedade vOutro.
                  * 
                  * @return
                  *     possible object is
@@ -31782,7 +31782,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDescIncond.
+                 * Obtém o valor da propriedade vDescIncond.
                  * 
                  * @return
                  *     possible object is
@@ -31806,7 +31806,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vDescCond.
+                 * Obtém o valor da propriedade vDescCond.
                  * 
                  * @return
                  *     possible object is
@@ -31830,7 +31830,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vissRet.
+                 * Obtém o valor da propriedade vissRet.
                  * 
                  * @return
                  *     possible object is
@@ -31854,7 +31854,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cRegTrib.
+                 * Obtém o valor da propriedade cRegTrib.
                  * 
                  * @return
                  *     possible object is
@@ -31883,7 +31883,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -31929,7 +31929,7 @@ public class TNFe {
                 protected String vRetPrev;
 
                 /**
-                 * ObtÃ©m o valor da propriedade vRetPIS.
+                 * Obtém o valor da propriedade vRetPIS.
                  * 
                  * @return
                  *     possible object is
@@ -31953,7 +31953,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vRetCOFINS.
+                 * Obtém o valor da propriedade vRetCOFINS.
                  * 
                  * @return
                  *     possible object is
@@ -31977,7 +31977,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vRetCSLL.
+                 * Obtém o valor da propriedade vRetCSLL.
                  * 
                  * @return
                  *     possible object is
@@ -32001,7 +32001,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbcirrf.
+                 * Obtém o valor da propriedade vbcirrf.
                  * 
                  * @return
                  *     possible object is
@@ -32025,7 +32025,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade virrf.
+                 * Obtém o valor da propriedade virrf.
                  * 
                  * @return
                  *     possible object is
@@ -32049,7 +32049,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbcRetPrev.
+                 * Obtém o valor da propriedade vbcRetPrev.
                  * 
                  * @return
                  *     possible object is
@@ -32073,7 +32073,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vRetPrev.
+                 * Obtém o valor da propriedade vRetPrev.
                  * 
                  * @return
                  *     possible object is
@@ -32104,7 +32104,7 @@ public class TNFe {
         /**
          * <p>Classe Java de anonymous complex type.
          * 
-         * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+         * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
          * 
          * <pre>
          * &lt;complexType>
@@ -32303,7 +32303,7 @@ public class TNFe {
             protected List<TNFe.InfNFe.Transp.Vol> vol;
 
             /**
-             * ObtÃ©m o valor da propriedade modFrete.
+             * Obtém o valor da propriedade modFrete.
              * 
              * @return
              *     possible object is
@@ -32327,7 +32327,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade transporta.
+             * Obtém o valor da propriedade transporta.
              * 
              * @return
              *     possible object is
@@ -32351,7 +32351,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade retTransp.
+             * Obtém o valor da propriedade retTransp.
              * 
              * @return
              *     possible object is
@@ -32375,7 +32375,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade veicTransp.
+             * Obtém o valor da propriedade veicTransp.
              * 
              * @return
              *     possible object is
@@ -32428,7 +32428,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade vagao.
+             * Obtém o valor da propriedade vagao.
              * 
              * @return
              *     possible object is
@@ -32452,7 +32452,7 @@ public class TNFe {
             }
 
             /**
-             * ObtÃ©m o valor da propriedade balsa.
+             * Obtém o valor da propriedade balsa.
              * 
              * @return
              *     possible object is
@@ -32508,7 +32508,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -32561,7 +32561,7 @@ public class TNFe {
                 protected String cMunFG;
 
                 /**
-                 * ObtÃ©m o valor da propriedade vServ.
+                 * Obtém o valor da propriedade vServ.
                  * 
                  * @return
                  *     possible object is
@@ -32585,7 +32585,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vbcRet.
+                 * Obtém o valor da propriedade vbcRet.
                  * 
                  * @return
                  *     possible object is
@@ -32609,7 +32609,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade picmsRet.
+                 * Obtém o valor da propriedade picmsRet.
                  * 
                  * @return
                  *     possible object is
@@ -32633,7 +32633,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade vicmsRet.
+                 * Obtém o valor da propriedade vicmsRet.
                  * 
                  * @return
                  *     possible object is
@@ -32657,7 +32657,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cfop.
+                 * Obtém o valor da propriedade cfop.
                  * 
                  * @return
                  *     possible object is
@@ -32681,7 +32681,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cMunFG.
+                 * Obtém o valor da propriedade cMunFG.
                  * 
                  * @return
                  *     possible object is
@@ -32710,7 +32710,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -32781,7 +32781,7 @@ public class TNFe {
                 protected TUf uf;
 
                 /**
-                 * ObtÃ©m o valor da propriedade cnpj.
+                 * Obtém o valor da propriedade cnpj.
                  * 
                  * @return
                  *     possible object is
@@ -32805,7 +32805,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade cpf.
+                 * Obtém o valor da propriedade cpf.
                  * 
                  * @return
                  *     possible object is
@@ -32829,7 +32829,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xNome.
+                 * Obtém o valor da propriedade xNome.
                  * 
                  * @return
                  *     possible object is
@@ -32853,7 +32853,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade ie.
+                 * Obtém o valor da propriedade ie.
                  * 
                  * @return
                  *     possible object is
@@ -32877,7 +32877,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xEnder.
+                 * Obtém o valor da propriedade xEnder.
                  * 
                  * @return
                  *     possible object is
@@ -32901,7 +32901,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade xMun.
+                 * Obtém o valor da propriedade xMun.
                  * 
                  * @return
                  *     possible object is
@@ -32925,7 +32925,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade uf.
+                 * Obtém o valor da propriedade uf.
                  * 
                  * @return
                  *     possible object is
@@ -32954,7 +32954,7 @@ public class TNFe {
             /**
              * <p>Classe Java de anonymous complex type.
              * 
-             * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+             * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
              * 
              * <pre>
              * &lt;complexType>
@@ -33042,7 +33042,7 @@ public class TNFe {
                 protected List<TNFe.InfNFe.Transp.Vol.Lacres> lacres;
 
                 /**
-                 * ObtÃ©m o valor da propriedade qVol.
+                 * Obtém o valor da propriedade qVol.
                  * 
                  * @return
                  *     possible object is
@@ -33066,7 +33066,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade esp.
+                 * Obtém o valor da propriedade esp.
                  * 
                  * @return
                  *     possible object is
@@ -33090,7 +33090,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade marca.
+                 * Obtém o valor da propriedade marca.
                  * 
                  * @return
                  *     possible object is
@@ -33114,7 +33114,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade nVol.
+                 * Obtém o valor da propriedade nVol.
                  * 
                  * @return
                  *     possible object is
@@ -33138,7 +33138,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade pesoL.
+                 * Obtém o valor da propriedade pesoL.
                  * 
                  * @return
                  *     possible object is
@@ -33162,7 +33162,7 @@ public class TNFe {
                 }
 
                 /**
-                 * ObtÃ©m o valor da propriedade pesoB.
+                 * Obtém o valor da propriedade pesoB.
                  * 
                  * @return
                  *     possible object is
@@ -33218,7 +33218,7 @@ public class TNFe {
                 /**
                  * <p>Classe Java de anonymous complex type.
                  * 
-                 * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+                 * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
                  * 
                  * <pre>
                  * &lt;complexType>
@@ -33251,7 +33251,7 @@ public class TNFe {
                     protected String nLacre;
 
                     /**
-                     * ObtÃ©m o valor da propriedade nLacre.
+                     * Obtém o valor da propriedade nLacre.
                      * 
                      * @return
                      *     possible object is
@@ -33286,7 +33286,7 @@ public class TNFe {
     /**
      * <p>Classe Java de anonymous complex type.
      * 
-     * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+     * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
      * 
      * <pre>
      * &lt;complexType>
@@ -33332,7 +33332,7 @@ public class TNFe {
         protected String urlChave;
 
         /**
-         * ObtÃ©m o valor da propriedade qrCode.
+         * Obtém o valor da propriedade qrCode.
          * 
          * @return
          *     possible object is
@@ -33356,7 +33356,7 @@ public class TNFe {
         }
 
         /**
-         * ObtÃ©m o valor da propriedade urlChave.
+         * Obtém o valor da propriedade urlChave.
          * 
          * @return
          *     possible object is
@@ -33380,4 +33380,5 @@ public class TNFe {
         }
 
     }
+
 }

@@ -40,7 +40,7 @@ public class NFeConsultaProtocoloServico {
 	public static void main(String[] args) {
 		try {
 			NFeConsultaProtocoloServico nFeConsultaProtocoloServico = new NFeConsultaProtocoloServico(new ConfiguracaoJAO());
-			TRetConsSitNFe tRetConsSitNFe = nFeConsultaProtocoloServico.getSituacao("52171202662774000103650020000000551249315547");
+			TRetConsSitNFe tRetConsSitNFe = nFeConsultaProtocoloServico.getSituacao("52180103619219000161650010000000111668600185");
 			System.out.println(tRetConsSitNFe.getCStat());
 			System.out.println(tRetConsSitNFe.getXMotivo());
 			System.out.println(tRetConsSitNFe.getProtNFe().getInfProt().getNProt());

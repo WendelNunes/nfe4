@@ -1,8 +1,8 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.8-b130911.1802 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementa��o de Refer�ncia (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
-// Gerado em: 2017.12.26 às 12:32:45 PM BRST 
+// Todas as modifica��es neste arquivo ser�o perdidas ap�s a recompila��o do esquema de origem. 
+// Gerado em: 2018.01.12 �s 12:24:13 PM BRST 
 //
 
 package br.com.inloc.nfe4.autorizacao;
@@ -23,13 +23,13 @@ import javax.xml.bind.annotation.XmlType;
 import javax.xml.transform.stream.StreamSource;
 
 /**
- * Tipo Pedido de Concessão de Autorização da Nota Fiscal Eletrônica
+ * Tipo Pedido de Concess�o de Autoriza��o da Nota Fiscal Eletr�nica
  * 
  * <p>
  * Classe Java de TEnviNFe complex type.
  * 
  * <p>
- * O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
+ * O seguinte fragmento do esquema especifica o conte�do esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType name="TEnviNFe">
@@ -70,7 +70,7 @@ public class TEnviNFe {
 	protected String versao;
 
 	/**
-	 * Obtém o valor da propriedade idLote.
+	 * Obt�m o valor da propriedade idLote.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -91,7 +91,7 @@ public class TEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade indSinc.
+	 * Obt�m o valor da propriedade indSinc.
 	 * 
 	 * @return possible object is {@link String }
 	 * 
@@ -139,7 +139,7 @@ public class TEnviNFe {
 	}
 
 	/**
-	 * Obtém o valor da propriedade versao.
+	 * Obt�m o valor da propriedade versao.
 	 * 
 	 * @return possible object is {@link String }
 	 * 

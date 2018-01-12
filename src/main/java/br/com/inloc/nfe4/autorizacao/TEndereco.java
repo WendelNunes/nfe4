@@ -1,8 +1,8 @@
 //
-// Este arquivo foi gerado pela Arquitetura JavaTM para ImplementaÃ§Ã£o de ReferÃªncia (JAXB) de Bind XML, v2.2.8-b130911.1802 
+// Este arquivo foi gerado pela Arquitetura JavaTM para Implementação de Referência (JAXB) de Bind XML, v2.2.8-b130911.1802 
 // Consulte <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
-// Todas as modificaÃ§Ãµes neste arquivo serÃ£o perdidas apÃ³s a recompilaÃ§Ã£o do esquema de origem. 
-// Gerado em: 2017.12.26 Ã s 12:32:45 PM BRST 
+// Todas as modificações neste arquivo serão perdidas após a recompilação do esquema de origem. 
+// Gerado em: 2018.01.12 às 12:24:13 PM BRST 
 //
 
 
@@ -16,11 +16,11 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * Tipo Dados do EndereÃ§o  // 24/10/08 - tamanho mÃ­nimo
+ * Tipo Dados do Endereço  // 24/10/08 - tamanho mínimo
  * 
  * <p>Classe Java de TEndereco complex type.
  * 
- * <p>O seguinte fragmento do esquema especifica o conteÃºdo esperado contido dentro desta classe.
+ * <p>O seguinte fragmento do esquema especifica o conteúdo esperado contido dentro desta classe.
  * 
  * <pre>
  * &lt;complexType name="TEndereco">
@@ -146,7 +146,7 @@ public class TEndereco {
     protected String fone;
 
     /**
-     * ObtÃ©m o valor da propriedade xLgr.
+     * Obtém o valor da propriedade xLgr.
      * 
      * @return
      *     possible object is
@@ -170,7 +170,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade nro.
+     * Obtém o valor da propriedade nro.
      * 
      * @return
      *     possible object is
@@ -194,7 +194,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade xCpl.
+     * Obtém o valor da propriedade xCpl.
      * 
      * @return
      *     possible object is
@@ -218,7 +218,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade xBairro.
+     * Obtém o valor da propriedade xBairro.
      * 
      * @return
      *     possible object is
@@ -242,7 +242,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade cMun.
+     * Obtém o valor da propriedade cMun.
      * 
      * @return
      *     possible object is
@@ -266,7 +266,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade xMun.
+     * Obtém o valor da propriedade xMun.
      * 
      * @return
      *     possible object is
@@ -290,7 +290,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade uf.
+     * Obtém o valor da propriedade uf.
      * 
      * @return
      *     possible object is
@@ -314,7 +314,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade cep.
+     * Obtém o valor da propriedade cep.
      * 
      * @return
      *     possible object is
@@ -338,7 +338,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade cPais.
+     * Obtém o valor da propriedade cPais.
      * 
      * @return
      *     possible object is
@@ -362,7 +362,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade xPais.
+     * Obtém o valor da propriedade xPais.
      * 
      * @return
      *     possible object is
@@ -386,7 +386,7 @@ public class TEndereco {
     }
 
     /**
-     * ObtÃ©m o valor da propriedade fone.
+     * Obtém o valor da propriedade fone.
      * 
      * @return
      *     possible object is

@@ -26,7 +26,7 @@ public class ConfiguracaoJAO implements Configuracao, Serializable {
 
 	@Override
 	public String getSenhaCertificado() {
-		return "2b3p8ojul1D";
+		return "";
 	}
 
 	@Override
@@ -41,6 +41,6 @@ public class ConfiguracaoJAO implements Configuracao, Serializable {
 
 	@Override
 	public String getCSC() {
-		return this.getAmbiente().equals(Ambiente.HOMOLOGACAO) ? "a7b9f6e0bcda9816" : "";
+		return this.getAmbiente().equals(Ambiente.HOMOLOGACAO) ? "" : "";
 	}
 }

@@ -1,9 +1,11 @@
 package br.com.inloc.nfe4.autorizacao;
 
 import java.net.URL;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.axiom.om.OMAbstractFactory;
@@ -35,6 +37,7 @@ import br.com.inloc.nfe4.classes.Configuracao;
 import br.com.inloc.nfe4.classes.ConfiguracaoJAO;
 import br.com.inloc.nfe4.util.AssinaturaDigital;
 import br.com.inloc.nfe4.util.CertificadoDigital;
+import br.com.inloc.nfe4.util.ChaveAcesso;
 import br.com.inloc.nfe4.util.QrCode;
 
 public class NFeAutorizacaoServico {
@@ -57,10 +60,12 @@ public class NFeAutorizacaoServico {
 		tEnviNFe.setIndSinc("1");
 		tEnviNFe.setVersao("4.00");
 		tEnviNFe.getNFe().addAll(nfe);
-		tEnviNFe = TEnviNFe.xmlToObject(new AssinaturaDigital().assinaEnviNFe(tEnviNFe.getXML(), this.configuracao.getUrlCertificado(),
-				this.configuracao.getSenhaCertificado()));
+		String xml = tEnviNFe.getXML();
+		xml = xml.replace("xmlns:ns2=\"http://www.w3.org/2000/09/xmldsig#\"", "");
+		String xmlAssinado = new AssinaturaDigital().assinaEnviNFe(xml, this.configuracao.getUrlCertificado(), this.configuracao.getSenhaCertificado());
 		OMElement ome;
 		if (nfce) {
+			tEnviNFe = TEnviNFe.xmlToObject(xmlAssinado);
 			List<String> qrCodes = new ArrayList<String>();
 			for (TNFe n : tEnviNFe.getNFe()) {
 				qrCodes.add(QrCode.getCodeQRCode(n.getInfNFe().getId().substring(3), "100", this.configuracao.getAmbiente().getId(), n.getInfNFe().getDest() == null
@@ -74,7 +79,12 @@ public class NFeAutorizacaoServico {
 				n.getInfNFeSupl().setUrlChave(
 						Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfceUrlQrcode(this.configuracao.getAmbiente()));
 			}
-			ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
+			xml = tEnviNFe.getXML();
+			xml = xml.replace("xmlns:ns2=\"http://www.w3.org/2000/09/xmldsig#\"", "");
+			xml = xml.replace("<ns2:Signature>", "<Signature xmlns=\"http://www.w3.org/2000/09/xmldsig#\">");
+			xml = xml.replace("<ns2:", "<");
+			xml = xml.replace("</ns2:", "</");
+			ome = AXIOMUtil.stringToOM(xml);
 			List<Object> nfeElements = new ArrayList<>();
 			ome.getChildrenWithLocalName("NFe").forEachRemaining(nfeElements::add);
 			OMFactory omf = OMAbstractFactory.getOMFactory();
@@ -88,7 +98,7 @@ public class NFeAutorizacaoServico {
 				tEnviNFe.getNFe().get(i).getInfNFeSupl().setQrCode("<![CDATA[" + qrCodes.get(i) + "]]>");
 			}
 		} else {
-			ome = AXIOMUtil.stringToOM(tEnviNFe.getXML());
+			ome = AXIOMUtil.stringToOM(xmlAssinado);
 		}
 		NfeDadosMsg nfeDadosMsg = new NFeAutorizacao4Stub.NfeDadosMsg();
 		nfeDadosMsg.setExtraElement(ome);
@@ -98,16 +108,21 @@ public class NFeAutorizacaoServico {
 
 	public static void main(String[] args) {
 		try {
-			String cnpjEmitente = "03619219000161";
-			String inscricaoEstadualEmitente = "103243976";
-			String telefoneEmitente = "6235410790";
+			ConfiguracaoJAO configuracaoJAO = new ConfiguracaoJAO();
+			Date dataHora = new Date();
+			String cnpjEmitente = "XXXXXXXXXXXXXX";
 			String serie = "1";
 			String numeroNotaFiscal = "11";
-			String chaveNotaFiscal = "12967733";
-			String digitoVerificador = "0";
-			String id = "NFe52171203619219000161650010000000111129677330";
+			String modelo = "65";
+			String tipoEmissao = "1";
+			String codigoRandomico = ChaveAcesso.geraCodigoRandomico(dataHora);
+			String chaveAcessoSemDV = ChaveAcesso.geraChaveAcessoSemDV(configuracaoJAO.getUnidadeFederativa().getCodigo(), dataHora, null, cnpjEmitente, modelo, serie,
+					numeroNotaFiscal, tipoEmissao, codigoRandomico);
+			String digitoVerificador = ChaveAcesso.getDV(chaveAcessoSemDV).toString();
+			String chave = ChaveAcesso.getChaveAcesso(chaveAcessoSemDV, digitoVerificador);
+			String inscricaoEstadualEmitente = "XXXXXXXXX";
+			String telefoneEmitente = "XXXXXXXXXX";
 
-			ConfiguracaoJAO configuracaoJAO = new ConfiguracaoJAO();
 			NFeAutorizacaoServico nFeAutorizacaoServico = new NFeAutorizacaoServico(new ConfiguracaoJAO());
 			ObjectFactory objectFactory = new ObjectFactory();
 			TNFe nfe = objectFactory.createTNFe();
@@ -117,17 +132,17 @@ public class NFeAutorizacaoServico {
 			// IDENTIFICACAO
 			Ide ide = objectFactory.createTNFeInfNFeIde();
 			ide.setCUF(configuracaoJAO.getUnidadeFederativa().getCodigo());
-			ide.setCNF(chaveNotaFiscal);
+			ide.setCNF(chave.substring(35, 43));
 			ide.setNatOp("NFCE");
-			ide.setMod("65");
+			ide.setMod(modelo);
 			ide.setSerie(serie);
 			ide.setNNF(numeroNotaFiscal);
-			ide.setDhEmi("2018-01-11T17:23:28-02:00");
+			ide.setDhEmi(new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ssXXX").format(dataHora));
 			ide.setTpNF("1");
 			ide.setIdDest("1");
 			ide.setCMunFG("5208707"); // GOIANIA
 			ide.setTpImp("4");
-			ide.setTpEmis("1");
+			ide.setTpEmis(tipoEmissao);
 			ide.setCDV(digitoVerificador);
 			ide.setTpAmb(configuracaoJAO.getAmbiente().getId());
 			ide.setFinNFe("1");
@@ -165,7 +180,7 @@ public class NFeAutorizacaoServico {
 			prod.setCProd("2050000002");
 			prod.setXProd("NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL");
 			prod.setCEAN("00000011111115");
-			prod.setNCM("21069005");
+			prod.setNCM("22021000");
 			prod.setCEST("1709600");
 			prod.setCFOP("5405");
 			prod.setUCom("UN");
@@ -246,7 +261,7 @@ public class NFeAutorizacaoServico {
 			detPag.setVPag("34.99");
 			pag.getDetPag().add(detPag);
 			infNFe.setPag(pag);
-			infNFe.setId(id);
+			infNFe.setId("NFe" + chave);
 
 			nfe.setInfNFe(infNFe);
 			TRetEnviNFe retEnviNFe = nFeAutorizacaoServico.autoriza(Arrays.asList(nfe), "0000001");
