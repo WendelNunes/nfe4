@@ -122,13 +122,11 @@ public class NFeAutorizacaoServico {
 			String chave = ChaveAcesso.getChaveAcesso(chaveAcessoSemDV, digitoVerificador);
 			String inscricaoEstadualEmitente = "XXXXXXXXX";
 			String telefoneEmitente = "XXXXXXXXXX";
-
 			NFeAutorizacaoServico nFeAutorizacaoServico = new NFeAutorizacaoServico(new ConfiguracaoJAO());
 			ObjectFactory objectFactory = new ObjectFactory();
 			TNFe nfe = objectFactory.createTNFe();
 			InfNFe infNFe = objectFactory.createTNFeInfNFe();
 			infNFe.setVersao("4.00");
-
 			// IDENTIFICACAO
 			Ide ide = objectFactory.createTNFeInfNFeIde();
 			ide.setCUF(configuracaoJAO.getUnidadeFederativa().getCodigo());
@@ -151,7 +149,6 @@ public class NFeAutorizacaoServico {
 			ide.setProcEmi("0");
 			ide.setVerProc("1");
 			infNFe.setIde(ide);
-
 			// EMITENTE
 			Emit emit = objectFactory.createTNFeInfNFeEmit();
 			emit.setCNPJ(cnpjEmitente);
@@ -171,11 +168,9 @@ public class NFeAutorizacaoServico {
 			emit.setIE(inscricaoEstadualEmitente);
 			emit.setCRT("1");
 			infNFe.setEmit(emit);
-
 			// PRODUTOS
 			Det det = objectFactory.createTNFeInfNFeDet();
 			det.setNItem("1");
-
 			Prod prod = objectFactory.createTNFeInfNFeDetProd();
 			prod.setCProd("2050000002");
 			prod.setXProd("NOTA FISCAL EMITIDA EM AMBIENTE DE HOMOLOGACAO - SEM VALOR FISCAL");
@@ -193,16 +188,13 @@ public class NFeAutorizacaoServico {
 			prod.setVUnTrib("34.9900");
 			prod.setIndTot("1");
 			det.setProd(prod);
-
 			Imposto imposto = objectFactory.createTNFeInfNFeDetImposto();
-
 			ICMS icms = objectFactory.createTNFeInfNFeDetImpostoICMS();
 			ICMSSN500 icmssn500 = objectFactory.createTNFeInfNFeDetImpostoICMSICMSSN500();
 			icmssn500.setOrig("0");
 			icmssn500.setCSOSN("500");
 			icms.setICMSSN500(icmssn500);
 			imposto.getContent().add(objectFactory.createTNFeInfNFeDetImpostoICMS(icms));
-
 			PIS pis = objectFactory.createTNFeInfNFeDetImpostoPIS();
 			PISOutr pisOutr = objectFactory.createTNFeInfNFeDetImpostoPISPISOutr();
 			pisOutr.setCST("99");
@@ -211,7 +203,6 @@ public class NFeAutorizacaoServico {
 			pisOutr.setVPIS("0.00");
 			pis.setPISOutr(pisOutr);
 			imposto.getContent().add(objectFactory.createTNFeInfNFeDetImpostoPIS(pis));
-
 			COFINS cofins = objectFactory.createTNFeInfNFeDetImpostoCOFINS();
 			COFINSOutr cofinsOutr = objectFactory.createTNFeInfNFeDetImpostoCOFINSCOFINSOutr();
 			cofinsOutr.setCST("99");
@@ -221,9 +212,7 @@ public class NFeAutorizacaoServico {
 			cofins.setCOFINSOutr(cofinsOutr);
 			imposto.getContent().add(objectFactory.createTNFeInfNFeDetImpostoCOFINS(cofins));
 			det.setImposto(imposto);
-
 			infNFe.getDet().add(det);
-
 			// TOTAL
 			Total total = objectFactory.createTNFeInfNFeTotal();
 			ICMSTot icmsTot = objectFactory.createTNFeInfNFeTotalICMSTot();
@@ -248,12 +237,10 @@ public class NFeAutorizacaoServico {
 			icmsTot.setVIPIDevol("0.00");
 			total.setICMSTot(icmsTot);
 			infNFe.setTotal(total);
-
 			// TRANSPORTE
 			Transp transp = objectFactory.createTNFeInfNFeTransp();
 			transp.setModFrete("9");
 			infNFe.setTransp(transp);
-
 			// PAGAMENTO
 			Pag pag = objectFactory.createTNFeInfNFePag();
 			DetPag detPag = objectFactory.createTNFeInfNFePagDetPag();
@@ -262,7 +249,6 @@ public class NFeAutorizacaoServico {
 			pag.getDetPag().add(detPag);
 			infNFe.setPag(pag);
 			infNFe.setId("NFe" + chave);
-
 			nfe.setInfNFe(infNFe);
 			TRetEnviNFe retEnviNFe = nFeAutorizacaoServico.autoriza(Arrays.asList(nfe), "0000001");
 			System.out.println(retEnviNFe.getCStat());
