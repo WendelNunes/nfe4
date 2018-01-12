@@ -8,6 +8,21 @@ import org.apache.commons.lang3.StringUtils;
 
 public class ChaveAcesso {
 
+	private String chaveAcesso;
+	private String chave;
+	private String digitoVerificador;
+	private String Id;
+
+	public ChaveAcesso(Date dataHora, String ufCodigoIBGE, String cpf, String cnpj, String modelo, String serie, String numeroNota, String tipoEmissao) {
+		super();
+		String codigoRandomico = geraCodigoRandomico(dataHora);
+		String chaveAcessoSemDV = geraChaveAcessoSemDV(ufCodigoIBGE, dataHora, cpf, cnpj, modelo, serie, numeroNota, tipoEmissao, codigoRandomico);
+		this.digitoVerificador = getDV(chaveAcessoSemDV).toString();
+		this.chaveAcesso = getChaveAcesso(chaveAcessoSemDV, this.digitoVerificador);
+		this.chave = this.chaveAcesso.substring(35, 43);
+		this.Id = "NFe" + this.chave;
+	}
+
 	public static String geraCodigoRandomico(Date dataHora) {
 		final Random random = new Random(dataHora.getTime());
 		return StringUtils.leftPad(String.valueOf(random.nextInt(100000000)), 8, "0");
@@ -47,5 +62,21 @@ public class ChaveAcesso {
 				+ StringUtils.leftPad(numeroNota, 9, "0") //
 				+ StringUtils.leftPad(tipoEmissao, 1, "0") //
 				+ StringUtils.leftPad(codigoRandomico, 8, "0");
+	}
+
+	public String getChaveAcesso() {
+		return chaveAcesso;
+	}
+
+	public String getChave() {
+		return chave;
+	}
+
+	public String getDigitoVerificador() {
+		return digitoVerificador;
+	}
+
+	public String getId() {
+		return Id;
 	}
 }

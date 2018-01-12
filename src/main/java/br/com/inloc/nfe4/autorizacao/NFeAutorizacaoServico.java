@@ -115,11 +115,8 @@ public class NFeAutorizacaoServico {
 			String numeroNotaFiscal = "11";
 			String modelo = "65";
 			String tipoEmissao = "1";
-			String codigoRandomico = ChaveAcesso.geraCodigoRandomico(dataHora);
-			String chaveAcessoSemDV = ChaveAcesso.geraChaveAcessoSemDV(configuracaoJAO.getUnidadeFederativa().getCodigo(), dataHora, null, cnpjEmitente, modelo, serie,
-					numeroNotaFiscal, tipoEmissao, codigoRandomico);
-			String digitoVerificador = ChaveAcesso.getDV(chaveAcessoSemDV).toString();
-			String chave = ChaveAcesso.getChaveAcesso(chaveAcessoSemDV, digitoVerificador);
+			ChaveAcesso chaveAcesso = new ChaveAcesso(dataHora, configuracaoJAO.getUnidadeFederativa().getCodigo(), null, cnpjEmitente, modelo, serie, numeroNotaFiscal,
+					tipoEmissao);
 			String inscricaoEstadualEmitente = "XXXXXXXXX";
 			String telefoneEmitente = "XXXXXXXXXX";
 			NFeAutorizacaoServico nFeAutorizacaoServico = new NFeAutorizacaoServico(new ConfiguracaoJAO());
@@ -130,7 +127,7 @@ public class NFeAutorizacaoServico {
 			// IDENTIFICACAO
 			Ide ide = objectFactory.createTNFeInfNFeIde();
 			ide.setCUF(configuracaoJAO.getUnidadeFederativa().getCodigo());
-			ide.setCNF(chave.substring(35, 43));
+			ide.setCNF(chaveAcesso.getChave());
 			ide.setNatOp("NFCE");
 			ide.setMod(modelo);
 			ide.setSerie(serie);
@@ -141,7 +138,7 @@ public class NFeAutorizacaoServico {
 			ide.setCMunFG("5208707"); // GOIANIA
 			ide.setTpImp("4");
 			ide.setTpEmis(tipoEmissao);
-			ide.setCDV(digitoVerificador);
+			ide.setCDV(chaveAcesso.getDigitoVerificador());
 			ide.setTpAmb(configuracaoJAO.getAmbiente().getId());
 			ide.setFinNFe("1");
 			ide.setIndFinal("1");
@@ -248,7 +245,7 @@ public class NFeAutorizacaoServico {
 			detPag.setVPag("34.99");
 			pag.getDetPag().add(detPag);
 			infNFe.setPag(pag);
-			infNFe.setId("NFe" + chave);
+			infNFe.setId(chaveAcesso.getId());
 			nfe.setInfNFe(infNFe);
 			TRetEnviNFe retEnviNFe = nFeAutorizacaoServico.autoriza(Arrays.asList(nfe), "0000001");
 			System.out.println(retEnviNFe.getCStat());
