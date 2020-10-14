@@ -1,23 +1,19 @@
 package br.com.inloc.nfe4.distribuicaodfe;
 
 import java.net.URL;
-import java.util.List;
 
 import org.apache.axiom.om.OMElement;
 import org.apache.axiom.om.util.AXIOMUtil;
 
 import br.com.inloc.nfe4.classes.Autorizador;
 import br.com.inloc.nfe4.classes.Configuracao;
-import br.com.inloc.nfe4.classes.ConfiguracaoGoyaco;
 import br.com.inloc.nfe4.distribuicaodfe.DistDFeInt.ConsChNFe;
 import br.com.inloc.nfe4.distribuicaodfe.DistDFeInt.ConsNSU;
 import br.com.inloc.nfe4.distribuicaodfe.DistDFeInt.DistNSU;
 import br.com.inloc.nfe4.distribuicaodfe.NFeDistribuicaoDFeStub.NfeDadosMsg_type0;
 import br.com.inloc.nfe4.distribuicaodfe.NFeDistribuicaoDFeStub.NfeDistDFeInteresse;
 import br.com.inloc.nfe4.distribuicaodfe.NFeDistribuicaoDFeStub.NfeDistDFeInteresseResponse;
-import br.com.inloc.nfe4.distribuicaodfe.RetDistDFeInt.LoteDistDFeInt.DocZip;
 import br.com.inloc.nfe4.util.CertificadoDigital;
-import br.com.inloc.nfe4.util.Xml;
 
 public class NFeDistribuicaoDFeServico {
 
