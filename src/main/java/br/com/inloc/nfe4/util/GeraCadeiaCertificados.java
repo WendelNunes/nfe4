@@ -1,7 +1,6 @@
 package br.com.inloc.nfe4.util;
 
 import java.io.ByteArrayOutputStream;
-import java.io.File;
 import java.net.URI;
 import java.security.KeyStore;
 import java.security.MessageDigest;
@@ -14,8 +13,6 @@ import javax.net.ssl.SSLSocket;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
-
-import org.apache.commons.io.FileUtils;
 
 import br.com.inloc.nfe4.classes.Ambiente;
 import br.com.inloc.nfe4.classes.Autorizador;
@@ -43,14 +40,15 @@ public class GeraCadeiaCertificados {
 	}
 
 	private static void get(final KeyStore keyStore, final String host, final int port) throws Exception {
-		final TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
+		final TrustManagerFactory trustManagerFactory = TrustManagerFactory
+				.getInstance(TrustManagerFactory.getDefaultAlgorithm());
 		trustManagerFactory.init(keyStore);
 
 		final X509TrustManager defaultTrustManager = (X509TrustManager) trustManagerFactory.getTrustManagers()[0];
 		final SavingTrustManager savingTrustManager = new SavingTrustManager(defaultTrustManager);
 
 		final SSLContext sslContext = SSLContext.getInstance(PROTOCOL);
-		sslContext.init(null, new TrustManager[]{savingTrustManager}, null);
+		sslContext.init(null, new TrustManager[] { savingTrustManager }, null);
 
 		LOGGER.info(String.format("Abrindo conexao para o servidor: %s:%s", host, port));
 		try (SSLSocket sslSocket = (SSLSocket) sslContext.getSocketFactory().createSocket(host, port)) {
@@ -76,6 +74,7 @@ public class GeraCadeiaCertificados {
 			}
 		}
 	}
+
 	private static class SavingTrustManager implements X509TrustManager {
 		private final X509TrustManager trustManager;
 		private X509Certificate[] chain;
@@ -90,22 +89,16 @@ public class GeraCadeiaCertificados {
 		}
 
 		@Override
-		public void checkClientTrusted(final X509Certificate[] chain, final String authType) throws CertificateException {
+		public void checkClientTrusted(final X509Certificate[] chain, final String authType)
+				throws CertificateException {
 			this.trustManager.checkClientTrusted(chain, authType);
 		}
 
 		@Override
-		public void checkServerTrusted(final X509Certificate[] chain, final String authType) throws CertificateException {
+		public void checkServerTrusted(final X509Certificate[] chain, final String authType)
+				throws CertificateException {
 			this.chain = chain;
 			this.trustManager.checkServerTrusted(chain, authType);
-		}
-	}
-
-	public static void main(String[] args) {
-		try {
-			FileUtils.writeByteArrayToFile(new File("homologacao.cacerts"), GeraCadeiaCertificados.geraCadeiaCertificados(Ambiente.HOMOLOGACAO, "123456"));
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 	}
 }

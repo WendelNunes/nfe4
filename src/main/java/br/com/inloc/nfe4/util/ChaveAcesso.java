@@ -13,10 +13,12 @@ public class ChaveAcesso {
 	private String digitoVerificador;
 	private String Id;
 
-	public ChaveAcesso(Date dataHora, String ufCodigoIBGE, String cpf, String cnpj, String modelo, String serie, String numeroNota, String tipoEmissao) {
+	public ChaveAcesso(Date dataHora, String ufCodigoIBGE, String cpf, String cnpj, String modelo, String serie,
+			String numeroNota, String tipoEmissao) {
 		super();
 		String codigoRandomico = geraCodigoRandomico(dataHora);
-		String chaveAcessoSemDV = geraChaveAcessoSemDV(ufCodigoIBGE, dataHora, cpf, cnpj, modelo, serie, numeroNota, tipoEmissao, codigoRandomico);
+		String chaveAcessoSemDV = geraChaveAcessoSemDV(ufCodigoIBGE, dataHora, cpf, cnpj, modelo, serie, numeroNota,
+				tipoEmissao, codigoRandomico);
 		this.digitoVerificador = getDV(chaveAcessoSemDV).toString();
 		this.chaveAcesso = getChaveAcesso(chaveAcessoSemDV, this.digitoVerificador);
 		this.chave = this.chaveAcesso.substring(35, 43);
@@ -34,7 +36,7 @@ public class ChaveAcesso {
 
 	public static Integer getDV(String chaveAcessoSemDV) {
 		final char[] valores = chaveAcessoSemDV.toCharArray();
-		final int[] valoresInt = {2, 3, 4, 5, 6, 7, 8, 9};
+		final int[] valoresInt = { 2, 3, 4, 5, 6, 7, 8, 9 };
 		int indice = 0;
 		int soma = 0;
 		int valorTemp;
@@ -52,8 +54,8 @@ public class ChaveAcesso {
 		return ((dv == 11) || (dv == 10)) ? 0 : dv;
 	}
 
-	public static String geraChaveAcessoSemDV(String ufCodigoIBGE, Date dataHora, String cpf, String cnpj, String modelo, String serie, String numeroNota,
-			String tipoEmissao, String codigoRandomico) {
+	public static String geraChaveAcessoSemDV(String ufCodigoIBGE, Date dataHora, String cpf, String cnpj,
+			String modelo, String serie, String numeroNota, String tipoEmissao, String codigoRandomico) {
 		return StringUtils.leftPad(ufCodigoIBGE, 2, "0") //
 				+ StringUtils.leftPad(new SimpleDateFormat("yyMM").format(dataHora), 4, "0") //
 				+ StringUtils.leftPad(cnpj == null ? cpf : cnpj, 14, "0") //

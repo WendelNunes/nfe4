@@ -1,12 +1,10 @@
 package br.com.inloc.nfe4.util;
 
-import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.InputStreamReader;
 import java.security.InvalidAlgorithmParameterException;
 import java.security.KeyStore;
 import java.security.NoSuchAlgorithmException;
@@ -51,50 +49,6 @@ public class AssinaturaDigital {
 
 	private PrivateKey privateKey;
 	private KeyInfo keyInfo;
-
-	public static void main(String[] args) {
-		try {
-			String caminhoDoCertificadoDoCliente = "C:/JavaC/NF-e/certificadoDoCliente.pfx";
-			String senhaDoCertificadoDoCliente = "1234";
-			AssinaturaDigital assinaturaDigital = new AssinaturaDigital();
-
-			/**
-			 * Assinando o XML de Lote da NF-e fileEnviNFe = Caminho do Arquivo XML
-			 * (EnviNFe) gerado;
-			 */
-			info("");
-			String fileEnviNFe = "C:/JavaC/NF-e/xmlEnviNFe.xml";
-			String xmlEnviNFe = lerXML(fileEnviNFe);
-			String xmlEnviNFeAssinado = assinaturaDigital.assinaEnviNFe(xmlEnviNFe, caminhoDoCertificadoDoCliente,
-					senhaDoCertificadoDoCliente);
-			info("XML EnviNFe Assinado: " + xmlEnviNFeAssinado);
-
-			/**
-			 * Assinando o XML de Cancelamento da NF-e fileCancNFe = Caminho do Arquivo XML
-			 * (CancNFe) gerado;
-			 */
-			info("");
-			String fileCancNFe = "C:/JavaC/NF-e/xmlCancNFe.xml";
-			String xmlCancNFe = lerXML(fileCancNFe);
-			String xmlCancNFeAssinado = assinaturaDigital.assinaCancNFe(xmlCancNFe, caminhoDoCertificadoDoCliente,
-					senhaDoCertificadoDoCliente);
-			info("XML CancNFe Assinado: " + xmlCancNFeAssinado);
-
-			/**
-			 * Assinando o XML de Inutilizacao da NF-e fileInutNFe = Caminho do Arquivo XML
-			 * (InutNFe) gerado;
-			 */
-			info("");
-			String fileInutNFe = "C:/JavaC/NF-e/xmlInutNFe.xml";
-			String xmlInutNFe = lerXML(fileInutNFe);
-			String xmlInutNFeAssinado = assinaturaDigital.assinaInutNFe(xmlInutNFe, caminhoDoCertificadoDoCliente,
-					senhaDoCertificadoDoCliente);
-			info("XML InutNFe Assinado: " + xmlInutNFeAssinado);
-
-		} catch (Exception e) {
-			error("| " + e.toString());
-		}
-	}
 
 	/**
 	 * Assinatura do XML de Envio de Lote da NF-e utilizando Certificado Digital A1.
@@ -238,7 +192,6 @@ public class AssinaturaDigital {
 		}
 
 		X509Certificate cert = (X509Certificate) pkEntry.getCertificate();
-		info("SubjectDN: " + cert.getSubjectDN().toString());
 
 		KeyInfoFactory keyInfoFactory = signatureFactory.getKeyInfoFactory();
 		List<X509Certificate> x509Content = new ArrayList<X509Certificate>();
@@ -259,26 +212,5 @@ public class AssinaturaDigital {
 			xml = xml.replaceAll(" standalone=\"no\"", "");
 		}
 		return xml;
-	}
-
-	private static String lerXML(String fileXML) throws IOException {
-		String linha = "";
-		StringBuilder xml = new StringBuilder();
-
-		BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(fileXML)));
-		while ((linha = in.readLine()) != null) {
-			xml.append(linha);
-		}
-		in.close();
-
-		return xml.toString();
-	}
-
-	private static void error(String error) {
-		System.out.println("| ERROR: " + error);
-	}
-
-	private static void info(String info) {
-		System.out.println("| INFO: " + info);
 	}
 }

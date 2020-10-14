@@ -7,7 +7,6 @@ import org.apache.axiom.om.util.AXIOMUtil;
 
 import br.com.inloc.nfe4.classes.Autorizador;
 import br.com.inloc.nfe4.classes.Configuracao;
-import br.com.inloc.nfe4.classes.ConfiguracaoJAO;
 import br.com.inloc.nfe4.consultaprotocolo.NFeConsultaProtocolo4Stub.NfeResultMsg;
 import br.com.inloc.nfe4.util.CertificadoDigital;
 
@@ -22,7 +21,8 @@ public class NFeConsultaProtocoloServico {
 
 	public TRetConsSitNFe getSituacao(String chaveNFe) throws Exception {
 		CertificadoDigital.geraInformacoesCertificadoDigital(this.configuracao);
-		URL url = new URL(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa()).getNfeConsultaProtocolo(this.configuracao.getAmbiente()));
+		URL url = new URL(Autorizador.obterPorUnidadeFederativa(this.configuracao.getUnidadeFederativa())
+				.getNfeConsultaProtocolo(this.configuracao.getAmbiente()));
 		ObjectFactory objectFactory = new ObjectFactory();
 		TConsSitNFe tConsSitNFe = objectFactory.createTConsSitNFe();
 		tConsSitNFe.setChNFe(chaveNFe);
@@ -35,17 +35,5 @@ public class NFeConsultaProtocoloServico {
 		NFeConsultaProtocolo4Stub nFeConsultaProtocolo4Stub = new NFeConsultaProtocolo4Stub(url.toString());
 		NfeResultMsg nfeResultMsg = nFeConsultaProtocolo4Stub.nfeConsultaNF(dadosMsg);
 		return TRetConsSitNFe.xmlToObject(nfeResultMsg.getExtraElement().toString());
-	}
-
-	public static void main(String[] args) {
-		try {
-			NFeConsultaProtocoloServico nFeConsultaProtocoloServico = new NFeConsultaProtocoloServico(new ConfiguracaoJAO());
-			TRetConsSitNFe tRetConsSitNFe = nFeConsultaProtocoloServico.getSituacao("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-			System.out.println(tRetConsSitNFe.getCStat());
-			System.out.println(tRetConsSitNFe.getXMotivo());
-			System.out.println(tRetConsSitNFe.getProtNFe().getInfProt().getNProt());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 	}
 }
