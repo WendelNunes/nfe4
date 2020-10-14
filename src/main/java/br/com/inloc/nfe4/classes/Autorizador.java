@@ -47,9 +47,22 @@ public enum Autorizador {
 
 		@Override
 		public String getNfceUrlQrcode(Ambiente ambiente) {
-			return ambiente.equals(Ambiente.HOMOLOGACAO)
-					? "http://homolog.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe"
+			return ambiente.equals(Ambiente.HOMOLOGACAO) ? "http://homolog.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe"
 					: "http://nfe.sefaz.go.gov.br/nfeweb/sites/nfce/danfeNFCe";
+		}
+
+		@Override
+		public String getConsultaDistribuicaoDFe(Ambiente ambiente) {
+			return ambiente.equals(Ambiente.HOMOLOGACAO)
+					? "https://hom.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx"
+					: "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx";
+		}
+
+		@Override
+		public String getRecepcaoEvento(Ambiente ambiente) {
+			return ambiente.equals(Ambiente.HOMOLOGACAO)
+					? "https://homolog.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4?wsdl"
+					: "https://nfe.sefaz.go.gov.br/nfe/services/NFeRecepcaoEvento4?wsdl";
 		}
 	};
 
@@ -76,6 +89,10 @@ public enum Autorizador {
 	public abstract String getNfceAutorizacao(Ambiente ambiente);
 
 	public abstract String getNfceUrlQrcode(Ambiente ambiente);
+
+	public abstract String getConsultaDistribuicaoDFe(Ambiente ambiente);
+
+	public abstract String getRecepcaoEvento(Ambiente ambiente);
 
 	public static Autorizador obterPorUnidadeFederativa(UnidadeFederativa unidadeFederativa) {
 		for (Autorizador a : values()) {

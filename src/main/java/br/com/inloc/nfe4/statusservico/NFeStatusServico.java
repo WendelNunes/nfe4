@@ -7,7 +7,7 @@ import org.apache.axiom.om.util.AXIOMUtil;
 
 import br.com.inloc.nfe4.classes.Autorizador;
 import br.com.inloc.nfe4.classes.Configuracao;
-import br.com.inloc.nfe4.classes.ConfiguracaoJAO;
+import br.com.inloc.nfe4.classes.ConfiguracaoGoyaco;
 import br.com.inloc.nfe4.statusservico.NFeStatusServico4Stub.NfeResultMsg;
 import br.com.inloc.nfe4.util.CertificadoDigital;
 
@@ -40,7 +40,7 @@ public class NFeStatusServico {
 
 	public static void main(String[] args) {
 		try {
-			NFeStatusServico nFeStatusServico = new NFeStatusServico(new ConfiguracaoJAO());
+			NFeStatusServico nFeStatusServico = new NFeStatusServico(new ConfiguracaoGoyaco());
 			TRetConsStatServ tRetConsStatServ = nFeStatusServico.getStatus();
 			System.out.println(tRetConsStatServ.getCStat());
 			System.out.println(tRetConsStatServ.getXMotivo());
